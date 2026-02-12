@@ -1,0 +1,137 @@
+// =============================================================================
+// FOOTER
+// =============================================================================
+
+.site-footer {
+  background: $bg-secondary;
+  border-top: $border-width solid $border-primary;
+  padding: $space-16 0 $space-8;
+  margin-top: auto;
+
+  // Account for mobile sticky CTA
+  padding-bottom: calc($space-8 + 80px);
+
+  @media (min-width: $breakpoint-xl) {
+    padding-bottom: $space-8;
+  }
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-8;
+  margin-bottom: $space-12;
+
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: $space-12;
+  }
+}
+
+// Footer brand section
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  font-size: $text-xl;
+  font-weight: $font-bold;
+  color: $text-primary;
+  margin-bottom: $space-4;
+
+  span {
+    color: $proton-purple-light;
+  }
+}
+
+.footer-tagline {
+  font-size: $text-sm;
+  color: $text-muted;
+  margin-bottom: $space-4;
+}
+
+// Footer navigation columns
+.footer-nav {
+  h4 {
+    font-size: $text-sm;
+    font-weight: $font-semibold;
+    text-transform: uppercase;
+    letter-spacing: $tracking-wide;
+    color: $text-secondary;
+    margin-bottom: $space-4;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: $space-3;
+  }
+
+  a {
+    font-size: $text-sm;
+    color: $text-muted;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $proton-purple-light;
+    }
+  }
+}
+
+// Footer bottom
+.footer-bottom {
+  padding-top: $space-8;
+  border-top: $border-width solid $border-primary;
+}
+
+.footer-disclaimer {
+  font-size: $text-xs;
+  color: $text-muted;
+  line-height: $leading-relaxed;
+  margin-bottom: $space-4;
+
+  a {
+    color: $text-secondary;
+    text-decoration: underline;
+
+    &:hover {
+      color: $proton-purple-light;
+    }
+  }
+}
+
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-copyright {
+  font-size: $text-sm;
+  color: $text-muted;
+}
+
+.footer-legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-4;
+
+  a {
+    font-size: $text-sm;
+    color: $text-muted;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $proton-purple-light;
+    }
+  }
+}

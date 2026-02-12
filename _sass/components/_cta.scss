@@ -1,0 +1,266 @@
+// =============================================================================
+// CALL-TO-ACTION COMPONENTS
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// IN-LINE CTA (Inside content)
+// -----------------------------------------------------------------------------
+
+.cta-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: $space-8 $space-6;
+  margin: $space-8 0;
+  background: linear-gradient(135deg, rgba($proton-purple, 0.15) 0%, rgba($purple-900, 0.1) 100%);
+  border: $border-width solid rgba($proton-purple, 0.3);
+  border-radius: $radius-2xl;
+
+  @media (min-width: $breakpoint-md) {
+    padding: $space-12 $space-8;
+  }
+}
+
+.cta-inline-title {
+  font-size: $text-xl;
+  font-weight: $font-bold;
+  margin-bottom: $space-2;
+  color: $text-primary;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $text-2xl;
+  }
+}
+
+.cta-inline-text {
+  color: $text-secondary;
+  margin-bottom: $space-6;
+  max-width: 500px;
+}
+
+// Horizontal inline CTA
+.cta-inline-horizontal {
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  gap: $space-6;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-inline-content {
+    flex: 1;
+  }
+
+  .cta-inline-text {
+    margin-bottom: 0;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// STICKY CTA (Desktop sidebar)
+// -----------------------------------------------------------------------------
+
+.cta-sticky {
+  display: none;
+
+  @media (min-width: $breakpoint-xl) {
+    display: block;
+    position: fixed;
+    right: $space-6;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 280px;
+    z-index: $z-sticky;
+  }
+}
+
+.cta-sticky-card {
+  background: $bg-elevated;
+  border: $border-width solid $border-primary;
+  border-radius: $radius-xl;
+  padding: $space-6;
+  box-shadow: $shadow-xl;
+
+  &:hover {
+    border-color: rgba($proton-purple, 0.5);
+    box-shadow: $shadow-glow;
+  }
+}
+
+.cta-sticky-badge {
+  display: inline-block;
+  padding: $space-1 $space-3;
+  font-size: $text-xs;
+  font-weight: $font-semibold;
+  text-transform: uppercase;
+  letter-spacing: $tracking-wide;
+  color: $proton-purple-light;
+  background: rgba($proton-purple, 0.15);
+  border-radius: $radius-full;
+  margin-bottom: $space-4;
+}
+
+.cta-sticky-title {
+  font-size: $text-lg;
+  font-weight: $font-bold;
+  margin-bottom: $space-2;
+  color: $text-primary;
+}
+
+.cta-sticky-text {
+  font-size: $text-sm;
+  color: $text-muted;
+  margin-bottom: $space-4;
+}
+
+.cta-sticky-features {
+  margin-bottom: $space-4;
+}
+
+.cta-sticky-feature {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  font-size: $text-sm;
+  color: $text-secondary;
+  margin-bottom: $space-2;
+
+  &::before {
+    content: "✓";
+    color: $success;
+    font-weight: $font-bold;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// MOBILE STICKY CTA (Bottom bar)
+// -----------------------------------------------------------------------------
+
+.cta-mobile-sticky {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: $space-4;
+  background: rgba($bg-primary, 0.95);
+  backdrop-filter: blur(12px);
+  border-top: $border-width solid $border-primary;
+  z-index: $z-fixed;
+
+  @media (min-width: $breakpoint-xl) {
+    display: none;
+  }
+}
+
+.cta-mobile-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-4;
+}
+
+.cta-mobile-text {
+  flex: 1;
+
+  .cta-mobile-title {
+    font-size: $text-sm;
+    font-weight: $font-semibold;
+    color: $text-primary;
+    margin-bottom: $space-1;
+  }
+
+  .cta-mobile-subtitle {
+    font-size: $text-xs;
+    color: $text-muted;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// BANNER CTA (Full width)
+// -----------------------------------------------------------------------------
+
+.cta-banner {
+  position: relative;
+  padding: $space-16 $space-4;
+  background: linear-gradient(135deg, $proton-purple-dark 0%, $dark-900 100%);
+  text-align: center;
+  overflow: hidden;
+
+  @media (min-width: $breakpoint-md) {
+    padding: $space-20 $space-8;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236d4aff' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+  }
+}
+
+.cta-banner-content {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-banner-title {
+  font-size: $text-3xl;
+  font-weight: $font-extrabold;
+  color: white;
+  margin-bottom: $space-4;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $text-4xl;
+  }
+}
+
+.cta-banner-text {
+  font-size: $text-lg;
+  color: rgba(white, 0.8);
+  margin-bottom: $space-8;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $text-xl;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// CTA CLOSE BUTTON (for dismissible CTAs)
+// -----------------------------------------------------------------------------
+
+.cta-close {
+  position: absolute;
+  top: $space-3;
+  right: $space-3;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(white, 0.1);
+  border: none;
+  border-radius: $radius-full;
+  color: $text-muted;
+  cursor: pointer;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: rgba(white, 0.2);
+    color: $text-primary;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}

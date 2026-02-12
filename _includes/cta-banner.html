@@ -1,0 +1,36 @@
+{% comment %}
+  Banner CTA Component (Full-width section)
+  Usage: {% include cta-banner.html title="Title" text="Description" product="mail" %}
+
+  Parameters:
+    - title: Banner title
+    - text: Banner description
+    - product: Product key for CTA button
+{% endcomment %}
+
+{% assign product_key = include.product | default: "unlimited" %}
+{% assign product = site.data.partners.proton[product_key] %}
+{% assign affiliate_url = product.signup_url | append: site.data.partners.proton.partner_id %}
+
+{% assign banner_title = include.title | default: "Ready to Reclaim Your Privacy?" %}
+{% assign banner_text = include.text | default: "Join millions who have made the switch to privacy-first services. Start your journey today." %}
+
+<section class="cta-banner">
+  <div class="cta-banner-content">
+    <h2 class="cta-banner-title">{{ banner_title }}</h2>
+    <p class="cta-banner-text">{{ banner_text }}</p>
+    <div class="btn-group">
+      <a href="{{ affiliate_url }}" class="btn btn-primary btn-xl" target="_blank" rel="noopener">
+        {% if product_key == "unlimited" %}
+          Get Proton Unlimited
+        {% else %}
+          Try {{ product.name }} Free
+        {% endif %}
+        {% include icons/arrow-right.svg %}
+      </a>
+      <a href="{{ '/products/' | relative_url }}" class="btn btn-secondary btn-xl">
+        Compare Products
+      </a>
+    </div>
+  </div>
+</section>

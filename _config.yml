@@ -1,0 +1,90 @@
+# =============================================================================
+# DEGOOG.US - Jekyll Configuration
+# A privacy-focused resource for transitioning from Google to Proton
+# =============================================================================
+
+# Site Settings
+title: "DeGoog.us"
+tagline: "Reclaim Your Digital Privacy"
+description: "Your comprehensive guide to transitioning from Google services to Proton's privacy-first ecosystem. Learn why privacy matters and how to make the switch."
+url: "https://degoog.us"
+baseurl: ""
+lang: "en-US"
+
+# Owner Information
+author:
+  name: "TechGuyWithABeard"
+  company: "ThompsonBlack LLC"
+  location: "Florence, SC"
+  email: "support@degoog.us"
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+timezone: America/New_York
+
+# Sass Configuration
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Collections
+collections:
+  products:
+    output: true
+    permalink: /products/:name/
+
+# Default Front Matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "TechGuyWithABeard"
+      show_cta: true
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+      show_cta: true
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - LICENSE
+  - .gitignore
+  - .sass-cache
+  - Materials_for_Proton_Partners
+
+# SEO Settings
+twitter:
+  card: "summary_large_image"
+
+social:
+  name: "DeGoog.us"
+  links:
+    - "https://twitter.com/michalaferber"
+
+# Google Analytics (Optional - ironic, but useful for tracking)
+# google_analytics: ""
+
+# Feed Settings
+feed:
+  path: feed.xml

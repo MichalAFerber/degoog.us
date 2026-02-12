@@ -1,0 +1,29 @@
+/* TEAM */
+
+Site Owner: TechGuyWithABeard
+Company: ThompsonBlack LLC
+Location: Florence, SC, USA
+Contact: contact@degoog.us
+
+/* SITE */
+
+Last update: 2026/02/05
+Language: English
+Doctype: HTML5
+Framework: Jekyll 4.x
+Hosting: Cloudflare Pages
+CSS: Custom SCSS (Proton Purple/Dark theme)
+
+/* THANKS */
+
+Proton AG - For building privacy-first services
+Jekyll - For the static site generator
+Cloudflare - For hosting and CDN
+You - For caring about privacy
+
+/* MISSION */
+
+DeGoog.us exists to help people reclaim their digital privacy
+by transitioning from Google services to Proton's encrypted ecosystem.
+
+Privacy is a human right, not a luxury.

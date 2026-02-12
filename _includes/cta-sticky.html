@@ -1,0 +1,33 @@
+{% comment %}
+  Sticky CTA Component (Desktop sidebar)
+  Appears on all pages unless show_cta: false is set in front matter
+{% endcomment %}
+
+{% assign product = site.data.partners.proton.unlimited %}
+{% assign affiliate_url = product.signup_url | append: site.data.partners.proton.partner_id %}
+
+<div class="cta-sticky" id="cta-sticky">
+  <div class="cta-sticky-card">
+    <span class="cta-sticky-badge">Special Offer</span>
+    <h4 class="cta-sticky-title">Get Proton Unlimited</h4>
+    <p class="cta-sticky-text">All Proton services in one privacy suite.</p>
+
+    <div class="cta-sticky-features">
+      <div class="cta-sticky-feature">Proton Mail</div>
+      <div class="cta-sticky-feature">Proton VPN</div>
+      <div class="cta-sticky-feature">Proton Drive</div>
+      <div class="cta-sticky-feature">Proton Calendar</div>
+      <div class="cta-sticky-feature">Proton Pass</div>
+    </div>
+
+    <a href="{{ affiliate_url }}" class="btn btn-primary btn-block" target="_blank" rel="noopener">
+      Start Free Trial
+    </a>
+
+    <button class="cta-close" id="cta-sticky-close" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+</div>

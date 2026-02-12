@@ -1,0 +1,66 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          De<span>Goog</span>.us
+        </div>
+        <p class="footer-tagline">
+          Your trusted resource for transitioning from Google services to privacy-first alternatives. Learn why privacy matters and how to make the switch.
+        </p>
+      </div>
+
+      <!-- Products Column -->
+      <div class="footer-nav">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="{{ '/products/mail/' | relative_url }}">Proton Mail</a></li>
+          <li><a href="{{ '/products/drive/' | relative_url }}">Proton Drive</a></li>
+          <li><a href="{{ '/products/vpn/' | relative_url }}">Proton VPN</a></li>
+          <li><a href="{{ '/products/calendar/' | relative_url }}">Proton Calendar</a></li>
+          <li><a href="{{ '/products/pass/' | relative_url }}">Proton Pass</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources Column -->
+      <div class="footer-nav">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
+          <li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal Column -->
+      <div class="footer-nav">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a></li>
+          <li><a href="{{ '/terms/' | relative_url }}">Terms of Use</a></li>
+          <li><a href="{{ '/disclaimer/' | relative_url }}">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <!-- Mandatory Disclaimer -->
+      <div class="footer-disclaimer">
+        {% include disclaimer.html %}
+      </div>
+
+      <div class="footer-legal">
+        <p class="footer-copyright">
+          &copy; {{ 'now' | date: '%Y' }} {{ site.author.company }} d.b.a. {{ site.author.name }}. All rights reserved.
+        </p>
+        <div class="footer-legal-links">
+          <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+          <a href="{{ '/terms/' | relative_url }}">Terms</a>
+          <a href="{{ '/disclaimer/' | relative_url }}">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

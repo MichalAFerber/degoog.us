@@ -1,0 +1,13 @@
+# Cloudflare Pages Redirects
+# https://developers.cloudflare.com/pages/platform/redirects/
+
+# Redirect www to non-www
+https://www.degoog.us/* https://degoog.us/:splat 301
+
+# Old URLs (add as needed)
+# /old-page /new-page 301
+
+# Feed redirects
+/rss /feed.xml 301
+/rss.xml /feed.xml 301
+/atom.xml /feed.xml 301

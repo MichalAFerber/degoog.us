@@ -1,0 +1,90 @@
+{% comment %}
+  Custom SEO meta tags - supplements jekyll-seo-tag
+  These are automatically included via the jekyll-seo-tag plugin,
+  but this file provides additional customization options.
+{% endcomment %}
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="{{ page.title | default: site.title }}">
+<meta name="description" content="{{ page.description | default: site.description | truncate: 160 }}">
+<meta name="author" content="{{ page.author | default: site.author.name }}">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description | truncate: 160 }}">
+<meta property="og:image" content="{{ page.image | default: '/assets/images/og-default.jpg' | absolute_url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ site.lang | default: 'en_US' }}">
+
+{% if page.layout == 'post' %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+<meta property="article:author" content="{{ page.author | default: site.author.name }}">
+{% if page.tags %}
+{% for tag in page.tags %}
+<meta property="article:tag" content="{{ tag }}">
+{% endfor %}
+{% endif %}
+{% endif %}
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ page.url | absolute_url }}">
+<meta property="twitter:title" content="{{ page.title | default: site.title }}">
+<meta property="twitter:description" content="{{ page.description | default: site.description | truncate: 160 }}">
+<meta property="twitter:image" content="{{ page.image | default: '/assets/images/og-default.jpg' | absolute_url }}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{% if page.layout == 'post' %}Article{% elsif page.layout == 'product' %}Product{% else %}WebPage{% endif %}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "headline": "{{ page.title | default: site.title | escape }}",
+  "description": "{{ page.description | default: site.description | escape | truncate: 160 }}",
+  {% if page.image %}"image": "{{ page.image | absolute_url }}",{% endif %}
+  "author": {
+    "@type": "Organization",
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/assets/images/logo.png' | absolute_url }}"
+    }
+  }
+  {% if page.date %},"datePublished": "{{ page.date | date_to_xmlschema }}"{% endif %}
+  {% if page.last_modified_at %},"dateModified": "{{ page.last_modified_at | date_to_xmlschema }}"{% endif %}
+}
+</script>
+
+{% if page.layout == 'home' %}
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "logo": "{{ '/assets/images/logo.png' | absolute_url }}",
+  "description": "{{ site.description | escape }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Florence",
+    "addressRegion": "SC",
+    "addressCountry": "US"
+  }
+}
+</script>
+{% endif %}

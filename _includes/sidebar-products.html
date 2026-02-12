@@ -1,0 +1,25 @@
+{% comment %}
+  Sidebar Products Component
+  Shows list of Proton products in sidebar
+  Usage: {% include sidebar-products.html exclude="mail" %}
+
+  Parameters:
+    - exclude: Product key to exclude from list
+{% endcomment %}
+
+<div class="sidebar-card">
+  <h4>Explore Proton</h4>
+  <ul class="sidebar-links">
+    {% for product in site.data.partners.proton %}
+      {% if product[0] != 'partner_id' and product[0] != 'default_campaign' and product[0] != 'unlimited' %}
+        {% unless product[0] == include.exclude %}
+        <li>
+          <a href="{{ '/products/' | append: product[0] | append: '/' | relative_url }}">
+            {{ product[1].name }}
+          </a>
+        </li>
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

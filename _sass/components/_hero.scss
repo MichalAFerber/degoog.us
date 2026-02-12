@@ -1,0 +1,223 @@
+// =============================================================================
+// HERO SECTIONS
+// =============================================================================
+
+.hero {
+  position: relative;
+  padding: $space-16 0;
+  overflow: hidden;
+
+  @media (min-width: $breakpoint-md) {
+    padding: $space-20 0;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding: $space-24 0;
+  }
+}
+
+// Background patterns
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+
+  // Gradient overlay
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at top, rgba($proton-purple, 0.15) 0%, transparent 70%);
+  }
+
+  // Grid pattern
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba($proton-purple, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba($proton-purple, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
+
+// Floating orbs
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.4;
+
+  &.orb-1 {
+    width: 400px;
+    height: 400px;
+    background: $proton-purple;
+    top: -100px;
+    right: -100px;
+  }
+
+  &.orb-2 {
+    width: 300px;
+    height: 300px;
+    background: $purple-600;
+    bottom: -50px;
+    left: -100px;
+  }
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  padding: $space-2 $space-4;
+  font-size: $text-xs;
+  font-weight: $font-semibold;
+  text-transform: uppercase;
+  letter-spacing: $tracking-wide;
+  color: $proton-purple-light;
+  background: rgba($proton-purple, 0.15);
+  border: $border-width solid rgba($proton-purple, 0.3);
+  border-radius: $radius-full;
+  margin-bottom: $space-6;
+}
+
+.hero-title {
+  font-size: $text-4xl;
+  font-weight: $font-extrabold;
+  line-height: $leading-tight;
+  margin-bottom: $space-6;
+  color: $text-primary;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $text-5xl;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: $text-6xl;
+  }
+
+  .highlight {
+    color: $proton-purple-light;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, $proton-purple-light 0%, $purple-400 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.hero-description {
+  font-size: $text-lg;
+  color: $text-secondary;
+  margin-bottom: $space-8;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $text-xl;
+  }
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $breakpoint-sm) {
+    flex-direction: row;
+  }
+}
+
+// Hero with side image
+.hero-split {
+  @media (min-width: $breakpoint-lg) {
+    .hero-content {
+      text-align: left;
+      margin: 0;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: $space-12;
+      align-items: center;
+    }
+
+    .hero-actions {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.hero-image {
+  position: relative;
+  display: none;
+
+  @media (min-width: $breakpoint-lg) {
+    display: block;
+  }
+
+  img {
+    border-radius: $radius-2xl;
+    box-shadow: $shadow-2xl;
+  }
+
+  // Decorative frame
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -$space-4;
+    border: $border-width-2 solid rgba($proton-purple, 0.3);
+    border-radius: $radius-3xl;
+    z-index: -1;
+  }
+}
+
+// Stats row
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $space-4;
+  margin-top: $space-12;
+  padding-top: $space-8;
+  border-top: $border-width solid $border-primary;
+
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: $space-8;
+  }
+}
+
+.hero-stat {
+  text-align: center;
+
+  .stat-value {
+    font-size: $text-3xl;
+    font-weight: $font-extrabold;
+    color: $proton-purple-light;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: $text-4xl;
+    }
+  }
+
+  .stat-label {
+    font-size: $text-sm;
+    color: $text-muted;
+    margin-top: $space-1;
+  }
+}

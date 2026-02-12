@@ -1,0 +1,34 @@
+{% comment %}
+  Inline CTA Component
+  Usage: {% include cta-inline.html title="Custom Title" text="Custom text" product="mail" %}
+
+  Parameters:
+    - title: Override default title
+    - text: Override default text
+    - product: Product key for specific CTA (mail, drive, vpn, calendar, pass, unlimited)
+    - horizontal: Set to true for horizontal layout
+{% endcomment %}
+
+{% assign product_key = include.product | default: "unlimited" %}
+{% assign product = site.data.partners.proton[product_key] %}
+{% assign affiliate_url = product.signup_url | append: site.data.partners.proton.partner_id %}
+
+{% assign cta_title = include.title | default: "Ready to Reclaim Your Privacy?" %}
+{% assign cta_text = include.text | default: "Join millions of users who have switched to Proton's privacy-first services. Start for free today." %}
+
+<div class="cta-inline {% if include.horizontal %}cta-inline-horizontal{% endif %}">
+  <div class="cta-inline-content">
+    <h3 class="cta-inline-title">{{ cta_title }}</h3>
+    <p class="cta-inline-text">{{ cta_text }}</p>
+  </div>
+  <div class="btn-group">
+    <a href="{{ affiliate_url }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+      {% if product_key == "unlimited" %}
+        Get Proton Unlimited
+      {% else %}
+        Try {{ product.name }} Free
+      {% endif %}
+      {% include icons/arrow-right.svg %}
+    </a>
+  </div>
+</div>

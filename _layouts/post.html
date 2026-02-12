@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+<article class="page post">
+  <div class="container">
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%B %d, %Y" }}
+        </time>
+        {% if page.author %}
+        <span class="post-author">by {{ page.author }}</span>
+        {% endif %}
+        {% if page.reading_time %}
+        <span class="post-reading-time">{{ page.reading_time }} min read</span>
+        {% endif %}
+      </div>
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="post-description lead">{{ page.description }}</p>
+      {% endif %}
+    </header>
+
+    {% if page.image %}
+    <div class="post-featured-image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
+    {% endif %}
+
+    <div class="content-with-sidebar">
+      <div class="post-content prose">
+        {{ content }}
+
+        {% if page.show_cta != false %}
+        {% include cta-inline.html
+           title="Ready to make the switch?"
+           text="Start your privacy journey today with Proton's secure services."
+           product=page.related_product
+        %}
+        {% endif %}
+      </div>
+
+      <aside class="sidebar">
+        {% if page.toc %}
+        <div class="sidebar-card">
+          <h4>Table of Contents</h4>
+          {{ content | toc_only }}
+        </div>
+        {% endif %}
+
+        <div class="sidebar-card">
+          <h4>Related Products</h4>
+          {% if page.related_product %}
+            {% assign product = site.data.partners.proton[page.related_product] %}
+            {% if product %}
+            <a href="{{ product.url }}{{ site.data.partners.proton.partner_id }}" class="btn btn-primary btn-block" target="_blank" rel="noopener">
+              Try {{ product.name }} Free
+            </a>
+            {% endif %}
+          {% else %}
+          <a href="{{ site.data.partners.proton.unlimited.url }}{{ site.data.partners.proton.partner_id }}" class="btn btn-primary btn-block" target="_blank" rel="noopener">
+            Get Proton Unlimited
+          </a>
+          {% endif %}
+        </div>
+
+        {% include sidebar-products.html %}
+      </aside>
+    </div>
+  </div>
+</article>

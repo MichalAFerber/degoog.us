@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="page">
+  <div class="container">
+    <header class="page-header">
+      <h1 class="page-title">{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="page-description">{{ page.description }}</p>
+      {% endif %}
+    </header>
+
+    <div class="post-list">
+      {% for post in site.posts %}
+      <article class="post-card">
+        {% if post.image %}
+        <div class="post-card-image">
+          <a href="{{ post.url | relative_url }}">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+          </a>
+        </div>
+        {% endif %}
+        <div class="post-card-content">
+          <div class="post-card-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%B %d, %Y" }}
+            </time>
+            {% if post.reading_time %}
+            <span>{{ post.reading_time }} min read</span>
+            {% endif %}
+          </div>
+          <h2 class="post-card-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
+          <p class="post-card-excerpt">
+            {{ post.excerpt | strip_html | truncate: 150 }}
+          </p>
+          <a href="{{ post.url | relative_url }}" class="post-card-link">
+            Read More
+            {% include icons/arrow-right.svg %}
+          </a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    {% if site.posts.size == 0 %}
+    <div class="text-center py-12">
+      <p class="text-secondary">No posts yet. Check back soon!</p>
+    </div>
+    {% endif %}
+  </div>
+</div>

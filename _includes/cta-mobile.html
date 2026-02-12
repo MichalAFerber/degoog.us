@@ -1,0 +1,21 @@
+{% comment %}
+  Mobile Sticky CTA Component (Bottom bar for mobile)
+  Appears on all pages unless show_cta: false is set in front matter
+{% endcomment %}
+
+{% assign product = site.data.partners.proton.unlimited %}
+{% assign affiliate_url = product.signup_url | append: site.data.partners.proton.partner_id %}
+
+<div class="cta-mobile-sticky" id="cta-mobile">
+  <div class="container">
+    <div class="cta-mobile-content">
+      <div class="cta-mobile-text">
+        <div class="cta-mobile-title">Ready to DeGoogle?</div>
+        <div class="cta-mobile-subtitle">Start your free Proton account</div>
+      </div>
+      <a href="{{ affiliate_url }}" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+        Get Started
+      </a>
+    </div>
+  </div>
+</div>

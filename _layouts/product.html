@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+{% assign product_key = page.product_key | default: page.slug %}
+{% assign product = site.data.partners.proton[product_key] %}
+{% assign google_product = site.data.partners.google[product_key] %}
+{% assign affiliate_url = product.url | append: site.data.partners.proton.partner_id %}
+{% if page.campaign %}
+  {% assign affiliate_url = affiliate_url | append: "&campaign=" | append: page.campaign %}
+{% endif %}
+
+<div class="product-page">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+    </div>
+    <div class="container">
+      <div class="product-header">
+        <div class="product-icon-large">
+          {% case product_key %}
+            {% when 'mail' %}{% include icons/mail.svg %}
+            {% when 'drive' %}{% include icons/drive.svg %}
+            {% when 'vpn' %}{% include icons/vpn.svg %}
+            {% when 'calendar' %}{% include icons/calendar.svg %}
+            {% when 'pass' %}{% include icons/pass.svg %}
+            {% else %}{% include icons/proton.svg %}
+          {% endcase %}
+        </div>
+        <div>
+          <h1 class="hero-title">{{ page.title }}</h1>
+          <p class="hero-description">{{ product.tagline }}</p>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="{{ affiliate_url }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+          Try {{ product.name }} Free
+          {% include icons/arrow-right.svg %}
+        </a>
+        <a href="#comparison" class="btn btn-secondary btn-lg">
+          See Comparison
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="section section-dark" id="comparison">
+    <div class="container">
+      <header class="section-header">
+        <h2 class="section-title">{{ google_product.name }} vs {{ product.name }}</h2>
+        <p class="section-subtitle">See why privacy-conscious users are making the switch</p>
+      </header>
+
+      {% include comparison-card.html product=product_key %}
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="section">
+    <div class="container">
+      <div class="content-with-sidebar">
+        <div class="prose">
+          {{ content }}
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h4>Quick Links</h4>
+            <ul class="sidebar-links">
+              <li><a href="{{ affiliate_url }}" target="_blank" rel="noopener">Official Website</a></li>
+              <li><a href="{{ product.signup_url }}{{ site.data.partners.proton.partner_id }}" target="_blank" rel="noopener">Create Free Account</a></li>
+              <li><a href="https://proton.me/support" target="_blank" rel="noopener">Support Center</a></li>
+            </ul>
+          </div>
+
+          {% include sidebar-products.html exclude=product_key %}
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  {% include cta-banner.html
+     title="Ready to Reclaim Your Privacy?"
+     text="Join millions who have switched to Proton's privacy-first services."
+     product=product_key
+  %}
+</div>

@@ -1,0 +1,94 @@
+{% comment %}
+  Comparison Card Component - "Privacy Battle" UI
+  Usage: {% include comparison-card.html product="mail" %}
+
+  Parameters:
+    - product: The product key (mail, drive, vpn, calendar, pass)
+{% endcomment %}
+
+{% assign product_key = include.product | default: "mail" %}
+{% assign proton = site.data.partners.proton[product_key] %}
+{% assign google = site.data.partners.google[product_key] %}
+
+<div class="card comparison-card">
+  <!-- Google Side - Anti-Privacy -->
+  <div class="comparison-side comparison-google">
+    <div class="comparison-header">
+      <div class="comparison-icon">
+        {% include icons/google.svg %}
+      </div>
+      <div>
+        <span class="comparison-label">The Privacy Problem</span>
+        <h3>{{ google.name }}</h3>
+      </div>
+    </div>
+
+    <div class="comparison-list">
+      {% for issue in google.issues %}
+      <div class="issue-item">{{ issue }}</div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Proton Side - Pro-Privacy -->
+  <div class="comparison-side comparison-proton">
+    <div class="comparison-header">
+      <div class="comparison-icon">
+        {% case product_key %}
+          {% when 'mail' %}{% include icons/mail.svg %}
+          {% when 'drive' %}{% include icons/drive.svg %}
+          {% when 'vpn' %}{% include icons/vpn.svg %}
+          {% when 'calendar' %}{% include icons/calendar.svg %}
+          {% when 'pass' %}{% include icons/pass.svg %}
+          {% else %}{% include icons/proton.svg %}
+        {% endcase %}
+      </div>
+      <div>
+        <span class="comparison-label">The Privacy Solution</span>
+        <h3>{{ proton.name }}</h3>
+      </div>
+    </div>
+
+    <div class="comparison-list">
+      {% case product_key %}
+        {% when 'mail' %}
+          <div class="feature-item">End-to-end encryption by default</div>
+          <div class="feature-item">Zero-access architecture - Proton can't read your emails</div>
+          <div class="feature-item">Based in Switzerland with strong privacy laws</div>
+          <div class="feature-item">No ads, no tracking, no profiling</div>
+          <div class="feature-item">Open-source and independently audited</div>
+        {% when 'drive' %}
+          <div class="feature-item">Client-side encryption before upload</div>
+          <div class="feature-item">Zero-knowledge - only you can access your files</div>
+          <div class="feature-item">Swiss data protection laws apply</div>
+          <div class="feature-item">Your files are never used to train AI</div>
+          <div class="feature-item">Secure file sharing with password protection</div>
+        {% when 'vpn' %}
+          <div class="feature-item">Strict no-logs policy independently audited</div>
+          <div class="feature-item">3000+ servers in 65+ countries</div>
+          <div class="feature-item">Swiss jurisdiction protects your privacy</div>
+          <div class="feature-item">Free tier available with no data limits</div>
+          <div class="feature-item">Open-source apps on all platforms</div>
+        {% when 'calendar' %}
+          <div class="feature-item">Encrypted event details and attendees</div>
+          <div class="feature-item">No data mining of your schedule</div>
+          <div class="feature-item">Seamlessly integrates with Proton Mail</div>
+          <div class="feature-item">Privacy-respecting event invitations</div>
+          <div class="feature-item">Zero-access encryption</div>
+        {% when 'pass' %}
+          <div class="feature-item">End-to-end encrypted password vault</div>
+          <div class="feature-item">Open-source and audited code</div>
+          <div class="feature-item">Secure password sharing</div>
+          <div class="feature-item">Built-in 2FA authenticator</div>
+          <div class="feature-item">Dark web monitoring for breaches</div>
+      {% endcase %}
+    </div>
+
+    <div class="mt-6">
+      <a href="{{ proton.url }}{{ site.data.partners.proton.partner_id }}" class="btn btn-primary" target="_blank" rel="noopener">
+        Switch to {{ proton.name }}
+        {% include icons/arrow-right.svg %}
+      </a>
+    </div>
+  </div>
+</div>

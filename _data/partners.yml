@@ -1,0 +1,119 @@
+# =============================================================================
+# CENTRALIZED AFFILIATE & PARTNER DATA
+# =============================================================================
+# All affiliate links are managed here. Update partner_id once and it
+# propagates across the entire site automatically.
+#
+# Usage in templates:
+#   {{ site.data.partners.proton.mail.url }}{{ site.data.partners.proton.partner_id }}
+#   Or use the {% include cta.html product="mail" %} component
+# =============================================================================
+
+proton:
+  # Your Proton Partner Affiliate ID (16236)
+  # TUNE tracking format for Proton Partner Program
+  partner_id: "?aff=16236"
+
+  # Campaign tracking suffix (optional, append after partner_id)
+  # Example: ?ref=degoog&campaign=homepage
+  default_campaign: ""
+
+  # Base URLs for each Proton product
+  mail:
+    name: "Proton Mail"
+    url: "https://proton.me/mail"
+    signup_url: "https://account.proton.me/signup"
+    tagline: "Encrypted email that protects your privacy"
+    icon: "mail"
+    color: "#6d4aff"
+
+  drive:
+    name: "Proton Drive"
+    url: "https://proton.me/drive"
+    signup_url: "https://account.proton.me/signup"
+    tagline: "Secure cloud storage with end-to-end encryption"
+    icon: "drive"
+    color: "#6d4aff"
+
+  vpn:
+    name: "Proton VPN"
+    url: "https://protonvpn.com"
+    signup_url: "https://account.protonvpn.com/signup"
+    tagline: "High-speed Swiss VPN that protects your privacy"
+    icon: "vpn"
+    color: "#6d4aff"
+
+  calendar:
+    name: "Proton Calendar"
+    url: "https://proton.me/calendar"
+    signup_url: "https://account.proton.me/signup"
+    tagline: "Your schedule is your business, not ours"
+    icon: "calendar"
+    color: "#6d4aff"
+
+  pass:
+    name: "Proton Pass"
+    url: "https://proton.me/pass"
+    signup_url: "https://account.proton.me/signup"
+    tagline: "Open-source password manager with E2E encryption"
+    icon: "pass"
+    color: "#6d4aff"
+
+  # Bundle/Suite
+  unlimited:
+    name: "Proton Unlimited"
+    url: "https://proton.me/pricing"
+    signup_url: "https://account.proton.me/signup"
+    tagline: "All Proton services in one privacy suite"
+    icon: "proton"
+    color: "#6d4aff"
+
+# =============================================================================
+# GOOGLE COMPARISON DATA
+# Used for "Privacy Battle" comparison components
+# =============================================================================
+google:
+  mail:
+    name: "Gmail"
+    issues:
+      - "Scans email content for ad targeting"
+      - "No end-to-end encryption by default"
+      - "Data stored on US servers (subject to FISA)"
+      - "Integrated with Google's advertising ecosystem"
+      - "Email metadata used for profiling"
+
+  drive:
+    name: "Google Drive"
+    issues:
+      - "Google can access your files"
+      - "No client-side encryption"
+      - "Files used to train AI models"
+      - "Integrated with Google's data collection"
+      - "Subject to US government data requests"
+
+  vpn:
+    name: "Google One VPN"
+    issues:
+      - "Being discontinued in 2025"
+      - "Google still has access to browsing data"
+      - "Limited server locations"
+      - "Tied to Google account"
+      - "No independent security audit"
+
+  calendar:
+    name: "Google Calendar"
+    issues:
+      - "Events used for ad targeting"
+      - "Location data collected"
+      - "Integrated with Google's ecosystem"
+      - "No encryption for event data"
+      - "Third-party sharing enabled by default"
+
+  password_manager:
+    name: "Chrome Password Manager"
+    issues:
+      - "Passwords stored in Google's cloud"
+      - "Tied to Google account security"
+      - "Limited features compared to dedicated managers"
+      - "No secure sharing options"
+      - "No breach monitoring"

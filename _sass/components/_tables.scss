@@ -1,0 +1,227 @@
+// =============================================================================
+// TABLES - Including Quick-Start Comparison Table
+// =============================================================================
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: $space-6 0;
+  border-radius: $radius-xl;
+  border: $border-width solid $border-primary;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: $text-sm;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $text-base;
+  }
+}
+
+thead {
+  background: $bg-elevated;
+
+  th {
+    padding: $space-4 $space-6;
+    text-align: left;
+    font-weight: $font-semibold;
+    color: $text-primary;
+    border-bottom: $border-width solid $border-primary;
+    white-space: nowrap;
+  }
+}
+
+tbody {
+  tr {
+    border-bottom: $border-width solid $border-primary;
+    transition: background $transition-fast;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background: rgba($proton-purple, 0.05);
+    }
+  }
+
+  td {
+    padding: $space-4 $space-6;
+    color: $text-secondary;
+    vertical-align: middle;
+  }
+}
+
+// =============================================================================
+// COMPARISON TABLE - "Quick Start" Migration Table
+// =============================================================================
+
+.comparison-table {
+  th, td {
+    text-align: center;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+}
+
+// Column headers
+.comparison-table thead {
+  th {
+    &.col-google {
+      background: rgba($google-red, 0.1);
+      color: $google-red;
+    }
+
+    &.col-proton {
+      background: rgba($proton-purple, 0.15);
+      color: $proton-purple-light;
+    }
+  }
+}
+
+// Cell states
+.cell-bad {
+  color: $google-red;
+
+  &::before {
+    content: "✗ ";
+    font-weight: $font-bold;
+  }
+}
+
+.cell-good {
+  color: $success;
+
+  &::before {
+    content: "✓ ";
+    font-weight: $font-bold;
+  }
+}
+
+.cell-neutral {
+  color: $text-muted;
+}
+
+// Service name with icon
+.service-cell {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+
+  .service-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+}
+
+// Action link in table
+.table-action {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-1;
+  padding: $space-1 $space-3;
+  font-size: $text-sm;
+  font-weight: $font-medium;
+  color: $proton-purple-light;
+  background: rgba($proton-purple, 0.1);
+  border-radius: $radius-md;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: rgba($proton-purple, 0.2);
+    color: white;
+  }
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+// =============================================================================
+// FEATURE COMPARISON TABLE
+// =============================================================================
+
+.feature-table {
+  td {
+    &:nth-child(2),
+    &:nth-child(3) {
+      text-align: center;
+      width: 120px;
+
+      @media (min-width: $breakpoint-md) {
+        width: 150px;
+      }
+    }
+  }
+}
+
+// Feature name
+.feature-name {
+  display: flex;
+  flex-direction: column;
+  gap: $space-1;
+
+  .feature-title {
+    font-weight: $font-medium;
+    color: $text-primary;
+  }
+
+  .feature-desc {
+    font-size: $text-xs;
+    color: $text-muted;
+  }
+}
+
+// Check/cross icons for features
+.icon-check {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  background: rgba($success, 0.15);
+  border-radius: $radius-full;
+  color: $success;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.icon-cross {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  background: rgba($danger, 0.15);
+  border-radius: $radius-full;
+  color: $danger;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.icon-partial {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  background: rgba($warning, 0.15);
+  border-radius: $radius-full;
+  color: $warning;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}

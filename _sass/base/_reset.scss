@@ -1,0 +1,96 @@
+// =============================================================================
+// CSS RESET - Modern, minimal reset
+// =============================================================================
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  line-height: $leading-normal;
+  font-family: $font-sans;
+  background-color: $bg-primary;
+  color: $text-primary;
+}
+
+// Remove default list styles
+ul,
+ol {
+  list-style: none;
+}
+
+// Anchor reset
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Image reset
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Form reset
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+// Remove animations for users who prefer reduced motion
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Tables
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// Horizontal rule
+hr {
+  border: none;
+  border-top: $border-width solid $border-primary;
+  margin: $space-8 0;
+}
+
+// Selection color
+::selection {
+  background-color: rgba($proton-purple, 0.3);
+  color: $text-primary;
+}

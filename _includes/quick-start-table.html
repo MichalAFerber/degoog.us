@@ -1,0 +1,99 @@
+{% comment %}
+  Quick Start Comparison Table
+  Shows side-by-side Google vs Proton services
+{% endcomment %}
+
+<div class="table-wrapper">
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Service</th>
+        <th class="col-google">Google</th>
+        <th class="col-proton">Proton</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="service-cell">
+            <span class="service-icon">{% include icons/mail.svg %}</span>
+            <span>Email</span>
+          </div>
+        </td>
+        <td class="cell-bad">Gmail</td>
+        <td class="cell-good">Proton Mail</td>
+        <td>
+          <a href="{{ site.data.partners.proton.mail.url }}{{ site.data.partners.proton.partner_id }}" class="table-action" target="_blank" rel="noopener">
+            Switch
+            {% include icons/arrow-right.svg %}
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="service-cell">
+            <span class="service-icon">{% include icons/drive.svg %}</span>
+            <span>Cloud Storage</span>
+          </div>
+        </td>
+        <td class="cell-bad">Google Drive</td>
+        <td class="cell-good">Proton Drive</td>
+        <td>
+          <a href="{{ site.data.partners.proton.drive.url }}{{ site.data.partners.proton.partner_id }}" class="table-action" target="_blank" rel="noopener">
+            Switch
+            {% include icons/arrow-right.svg %}
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="service-cell">
+            <span class="service-icon">{% include icons/vpn.svg %}</span>
+            <span>VPN</span>
+          </div>
+        </td>
+        <td class="cell-bad">Google One VPN</td>
+        <td class="cell-good">Proton VPN</td>
+        <td>
+          <a href="{{ site.data.partners.proton.vpn.url }}{{ site.data.partners.proton.partner_id }}" class="table-action" target="_blank" rel="noopener">
+            Switch
+            {% include icons/arrow-right.svg %}
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="service-cell">
+            <span class="service-icon">{% include icons/calendar.svg %}</span>
+            <span>Calendar</span>
+          </div>
+        </td>
+        <td class="cell-bad">Google Calendar</td>
+        <td class="cell-good">Proton Calendar</td>
+        <td>
+          <a href="{{ site.data.partners.proton.calendar.url }}{{ site.data.partners.proton.partner_id }}" class="table-action" target="_blank" rel="noopener">
+            Switch
+            {% include icons/arrow-right.svg %}
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="service-cell">
+            <span class="service-icon">{% include icons/pass.svg %}</span>
+            <span>Passwords</span>
+          </div>
+        </td>
+        <td class="cell-bad">Chrome Passwords</td>
+        <td class="cell-good">Proton Pass</td>
+        <td>
+          <a href="{{ site.data.partners.proton.pass.url }}{{ site.data.partners.proton.partner_id }}" class="table-action" target="_blank" rel="noopener">
+            Switch
+            {% include icons/arrow-right.svg %}
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

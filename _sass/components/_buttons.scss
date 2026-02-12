@@ -1,0 +1,138 @@
+// =============================================================================
+// BUTTONS
+// =============================================================================
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-2;
+  padding: $space-3 $space-6;
+  font-size: $text-base;
+  font-weight: $font-semibold;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: $radius-lg;
+  border: $border-width-2 solid transparent;
+  cursor: pointer;
+  transition: all $transition-base;
+  white-space: nowrap;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+// Primary button - Proton purple
+.btn-primary {
+  background: linear-gradient(135deg, $proton-purple 0%, $proton-purple-dark 100%);
+  color: white;
+  border-color: $proton-purple;
+
+  &:hover {
+    background: linear-gradient(135deg, $proton-purple-light 0%, $proton-purple 100%);
+    border-color: $proton-purple-light;
+    box-shadow: $shadow-glow-sm;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Secondary button - outlined
+.btn-secondary {
+  background: transparent;
+  color: $text-primary;
+  border-color: $border-secondary;
+
+  &:hover {
+    border-color: $proton-purple;
+    color: $proton-purple-light;
+    background: rgba($proton-purple, 0.1);
+  }
+}
+
+// Ghost button - minimal
+.btn-ghost {
+  background: transparent;
+  color: $text-secondary;
+  border-color: transparent;
+  padding: $space-2 $space-4;
+
+  &:hover {
+    color: $text-primary;
+    background: rgba(white, 0.05);
+  }
+}
+
+// Danger button
+.btn-danger {
+  background: $danger;
+  color: white;
+  border-color: $danger;
+
+  &:hover {
+    background: lighten($danger, 5%);
+    box-shadow: 0 0 20px rgba($danger, 0.3);
+  }
+}
+
+// Size variants
+.btn-sm {
+  padding: $space-2 $space-4;
+  font-size: $text-sm;
+  border-radius: $radius-md;
+}
+
+.btn-lg {
+  padding: $space-4 $space-8;
+  font-size: $text-lg;
+  border-radius: $radius-xl;
+}
+
+.btn-xl {
+  padding: $space-5 $space-10;
+  font-size: $text-xl;
+  border-radius: $radius-xl;
+}
+
+// Full width
+.btn-block {
+  width: 100%;
+}
+
+// Icon button
+.btn-icon {
+  padding: $space-3;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// Button with icon
+.btn svg,
+.btn .icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+// Button group
+.btn-group {
+  display: flex;
+  gap: $space-3;
+  flex-wrap: wrap;
+
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

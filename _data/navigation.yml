@@ -1,0 +1,59 @@
+# =============================================================================
+# SITE NAVIGATION
+# =============================================================================
+
+main:
+  - title: "Home"
+    url: "/"
+
+  - title: "Products"
+    url: "/products/"
+    children:
+      - title: "Proton Mail"
+        url: "/products/mail/"
+      - title: "Proton Drive"
+        url: "/products/drive/"
+      - title: "Proton VPN"
+        url: "/products/vpn/"
+      - title: "Proton Calendar"
+        url: "/products/calendar/"
+      - title: "Proton Pass"
+        url: "/products/pass/"
+
+  - title: "Blog"
+    url: "/blog/"
+
+  - title: "About"
+    url: "/about/"
+
+footer:
+  - title: "Products"
+    children:
+      - title: "Proton Mail"
+        url: "/products/mail/"
+      - title: "Proton Drive"
+        url: "/products/drive/"
+      - title: "Proton VPN"
+        url: "/products/vpn/"
+      - title: "Proton Calendar"
+        url: "/products/calendar/"
+      - title: "Proton Pass"
+        url: "/products/pass/"
+
+  - title: "Resources"
+    children:
+      - title: "Blog"
+        url: "/blog/"
+      - title: "Privacy Guide"
+        url: "/guide/"
+      - title: "FAQ"
+        url: "/faq/"
+
+  - title: "Legal"
+    children:
+      - title: "Privacy Policy"
+        url: "/privacy/"
+      - title: "Disclaimer"
+        url: "/disclaimer/"
+      - title: "Terms of Use"
+        url: "/terms/"

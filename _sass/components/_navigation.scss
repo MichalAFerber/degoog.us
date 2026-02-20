@@ -8,7 +8,14 @@
   z-index: $z-sticky;
   background: rgba($bg-primary, 0.9);
   backdrop-filter: blur(12px);
-  border-bottom: $border-width solid $border-primary;
+  border-bottom: $border-width solid transparent;
+  transition: background $transition-base, border-color $transition-base, box-shadow $transition-base;
+
+  &.is-scrolled {
+    background: rgba($bg-primary, 0.95);
+    border-bottom-color: $border-primary;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .nav-container {
@@ -24,10 +31,13 @@
   display: flex;
   align-items: center;
   gap: $space-2;
+  font-family: $font-heading;
   font-size: $text-xl;
-  font-weight: $font-bold;
+  font-weight: $font-extrabold;
   color: $text-primary;
   text-decoration: none;
+  letter-spacing: $tracking-tight;
+  transition: color $transition-fast;
 
   &:hover {
     color: $proton-purple-light;

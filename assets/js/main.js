@@ -102,7 +102,7 @@
     }, observerOptions);
 
     // Observe elements with animation classes
-    document.querySelectorAll('.card, .hero-stat, .feature-card').forEach(function(el) {
+    document.querySelectorAll('.card, .hero-stat, .feature-card, .comparison-card, .section-header').forEach(function(el) {
       observer.observe(el);
     });
   }

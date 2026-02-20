@@ -94,3 +94,14 @@ hr {
   background-color: rgba($proton-purple, 0.3);
   color: $text-primary;
 }
+
+// Focus-visible outline for keyboard accessibility
+:focus-visible {
+  outline: 2px solid $proton-purple-light;
+  outline-offset: 2px;
+}
+
+// Remove focus outline for mouse users
+:focus:not(:focus-visible) {
+  outline: none;
+}

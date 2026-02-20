@@ -37,8 +37,10 @@
   display: flex;
   align-items: center;
   gap: $space-2;
+  font-family: $font-heading;
   font-size: $text-xl;
-  font-weight: $font-bold;
+  font-weight: $font-extrabold;
+  letter-spacing: $tracking-tight;
   color: $text-primary;
   margin-bottom: $space-4;
 

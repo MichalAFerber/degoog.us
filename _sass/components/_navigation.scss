@@ -37,10 +37,10 @@
   color: $text-primary;
   text-decoration: none;
   letter-spacing: $tracking-tight;
-  transition: color $transition-fast;
+  transition: opacity $transition-fast;
 
   &:hover {
-    color: $accent-light;
+    opacity: 0.85;
   }
 
   .logo-icon {
@@ -49,7 +49,11 @@
   }
 
   .logo-text {
-    span {
+    .logo-google {
+      color: $google-red;
+    }
+
+    .logo-us {
       color: $accent-light;
     }
   }

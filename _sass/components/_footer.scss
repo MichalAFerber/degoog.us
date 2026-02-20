@@ -54,7 +54,13 @@
   font-weight: $font-extrabold;
   letter-spacing: $tracking-tight;
   color: $text-primary;
+  text-decoration: none;
   margin-bottom: $space-4;
+
+  &:hover {
+    color: $text-primary;
+    text-decoration: none;
+  }
 
   span {
     color: $accent-light;

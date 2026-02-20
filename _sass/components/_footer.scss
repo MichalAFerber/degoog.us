@@ -62,7 +62,11 @@
     text-decoration: none;
   }
 
-  span {
+  .logo-google {
+    color: $google-red;
+  }
+
+  .logo-us {
     color: $accent-light;
   }
 }

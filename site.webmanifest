@@ -1,6 +1,6 @@
 {
   "name": "De-Google.US",
-  "short_name": "De-Google",
+  "short_name": "De-Google.US",
   "description": "Your guide to transitioning from Google to Proton",
   "start_url": "/",
   "display": "standalone",

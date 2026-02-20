@@ -1,10 +1,10 @@
-# Security Policy for degoog.us
+# Security Policy for de-google.us
 # https://securitytxt.org/
 
-Contact: mailto:security@degoog.us
+Contact: mailto:security@de-google.us
 Expires: 2027-02-05T00:00:00.000Z
 Preferred-Languages: en
-Canonical: https://degoog.us/.well-known/security.txt
+Canonical: https://de-google.us/.well-known/security.txt
 
 # We take security seriously. If you discover a vulnerability,
 # please report it responsibly to the contact above.

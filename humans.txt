@@ -3,7 +3,7 @@
 Site Owner: TechGuyWithABeard
 Company: ThompsonBlack LLC
 Location: Florence, SC, USA
-Contact: contact@degoog.us
+Contact: contact@de-google.us
 
 /* SITE */
 
@@ -23,7 +23,7 @@ You - For caring about privacy
 
 /* MISSION */
 
-DeGoog.us exists to help people reclaim their digital privacy
+De-Google.US exists to help people reclaim their digital privacy
 by transitioning from Google services to Proton's encrypted ecosystem.
 
 Privacy is a human right, not a luxury.

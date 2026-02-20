@@ -170,7 +170,7 @@ Proton VPN is among the best:
 
 ### Who runs De-Google.US?
 
-De-Google.US is operated by ThompsonBlack LLC d.b.a. TechGuyWithABeard, based in Florence, SC. Behind every guide is 30 years of hands-on IT consulting experience. We're independent privacy advocates, not affiliated with Proton AG or Google LLC.
+De-Google.US is operated by ThompsonBlack LLC d.b.a. TechGuyWithABeard, a small digital privacy advocacy project based in Florence, SC. We're independent privacy advocates, not affiliated with Proton AG or Google LLC.
 
 ### Are you affiliated with Proton?
 

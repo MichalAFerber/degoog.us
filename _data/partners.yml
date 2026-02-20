@@ -15,7 +15,8 @@ proton:
   partner_id: ""
   aff_id: "16236"
 
-  # Campaign tracking suffix (optional)
+  # Campaign tracking suffix (optional, append after partner_id)
+  # Example: ?ref=de-google&campaign=homepage
   default_campaign: ""
 
   # Product data with TUNE affiliate tracking URLs

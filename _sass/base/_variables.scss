@@ -1,27 +1,20 @@
 // =============================================================================
-// DESIGN TOKENS - Proton Purple/Dark Theme
+// DESIGN TOKENS - De-Google.US Dark Theme with Proton Accent Palette
 // =============================================================================
 
 // -----------------------------------------------------------------------------
 // COLOR PALETTE
 // -----------------------------------------------------------------------------
 
-// Primary - Proton Purple
-$purple-50: #f5f3ff;
-$purple-100: #ede9fe;
-$purple-200: #ddd6fe;
-$purple-300: #c4b5fd;
-$purple-400: #a78bfa;
-$purple-500: #8b5cf6;
-$purple-600: #7c3aed;
-$purple-700: #6d28d9;
-$purple-800: #5b21b6;
-$purple-900: #4c1d95;
-
-// Proton Brand Purple
+// Proton Brand Colors (used as accents, not gradients)
 $proton-purple: #6d4aff;
 $proton-purple-light: #8a6dff;
 $proton-purple-dark: #5532cc;
+
+// Proton Green (secondary accent - for trust, success states)
+$proton-green: #1ea885;
+$proton-green-light: #2fd9a8;
+$proton-green-dark: #178a6d;
 
 // Dark Theme Base
 $dark-50: #f8fafc;
@@ -37,7 +30,7 @@ $dark-900: #0f172a;
 $dark-950: #020617;
 
 // Semantic Colors
-$success: #22c55e;
+$success: $proton-green;
 $warning: #f59e0b;
 $danger: #ef4444;
 $info: #3b82f6;
@@ -58,10 +51,16 @@ $text-secondary: $dark-300;
 $text-muted: $dark-400;
 $text-inverse: $dark-950;
 
+// Accent color (primary interactive color)
+$accent: $proton-purple;
+$accent-light: $proton-purple-light;
+$accent-secondary: $proton-green;
+$accent-secondary-light: $proton-green-light;
+
 // Border Colors
 $border-primary: $dark-700;
 $border-secondary: $dark-600;
-$border-accent: $proton-purple;
+$border-accent: $accent;
 
 // -----------------------------------------------------------------------------
 // TYPOGRAPHY
@@ -156,8 +155,9 @@ $shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)
 $shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
 $shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 $shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-$shadow-glow: 0 0 40px rgba($proton-purple, 0.3);
-$shadow-glow-sm: 0 0 20px rgba($proton-purple, 0.2);
+$shadow-glow: 0 0 40px rgba($accent, 0.15);
+$shadow-glow-sm: 0 0 20px rgba($accent, 0.1);
+$shadow-glow-green: 0 0 40px rgba($proton-green, 0.15);
 
 // -----------------------------------------------------------------------------
 // TRANSITIONS

@@ -1,25 +1,33 @@
 <footer class="site-footer">
   <div class="container">
+    <!-- Zero-Tracker Promise -->
+    <div class="footer-trust-bar">
+      <span class="trust-badge">Zero Trackers</span>
+      <span class="trust-badge">No Google Fonts</span>
+      <span class="trust-badge">No Analytics</span>
+      <span class="trust-badge">Open Source</span>
+    </div>
+
     <div class="footer-grid">
       <!-- Brand Column -->
       <div class="footer-brand">
         <div class="footer-logo">
-          De<span>Goog</span>.us
+          De-<span>Google</span>.US
         </div>
         <p class="footer-tagline">
-          Your trusted resource for transitioning from Google services to privacy-first alternatives. Learn why privacy matters and how to make the switch.
+          Expert-vetted guides for reclaiming your digital privacy. No trackers. No Google fonts. No compromises.
         </p>
       </div>
 
-      <!-- Products Column -->
+      <!-- Alternatives Column -->
       <div class="footer-nav">
-        <h4>Products</h4>
+        <h4>Alternatives</h4>
         <ul>
+          <li><a href="{{ '/alternatives/communication/' | relative_url }}">Communication</a></li>
+          <li><a href="{{ '/alternatives/cloud-storage/' | relative_url }}">Cloud Storage</a></li>
           <li><a href="{{ '/products/mail/' | relative_url }}">Proton Mail</a></li>
-          <li><a href="{{ '/products/drive/' | relative_url }}">Proton Drive</a></li>
           <li><a href="{{ '/products/vpn/' | relative_url }}">Proton VPN</a></li>
-          <li><a href="{{ '/products/calendar/' | relative_url }}">Proton Calendar</a></li>
-          <li><a href="{{ '/products/pass/' | relative_url }}">Proton Pass</a></li>
+          <li><a href="{{ '/products/drive/' | relative_url }}">Proton Drive</a></li>
         </ul>
       </div>
 
@@ -28,7 +36,8 @@
         <h4>Resources</h4>
         <ul>
           <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-          <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
+          <li><a href="{{ '/guide/' | relative_url }}">Getting Started</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
           <li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
           <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
         </ul>

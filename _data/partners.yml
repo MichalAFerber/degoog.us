@@ -10,60 +10,71 @@
 # =============================================================================
 
 proton:
-  # Your Proton Partner Affiliate ID (16236)
-  # TUNE tracking format for Proton Partner Program
-  partner_id: "?aff=16236"
+  # Proton Partner Program - Affiliate ID 16236
+  # TUNE tracking links from Proton (these are the proper tracked affiliate URLs)
+  partner_id: ""
+  aff_id: "16236"
 
   # Campaign tracking suffix (optional, append after partner_id)
   # Example: ?ref=de-google&campaign=homepage
   default_campaign: ""
 
-  # Base URLs for each Proton product
+  # Product data with TUNE affiliate tracking URLs
   mail:
     name: "Proton Mail"
-    url: "https://proton.me/mail"
-    signup_url: "https://account.proton.me/signup"
+    url: "https://go.getproton.me/aff_c?offer_id=7&aff_id=16236"
+    signup_url: "https://go.getproton.me/aff_c?offer_id=7&aff_id=16236"
+    info_url: "https://proton.me/mail"
     tagline: "Encrypted email that protects your privacy"
     icon: "mail"
     color: "#6d4aff"
+    promo: "$1 / €1 first month"
 
   drive:
     name: "Proton Drive"
-    url: "https://proton.me/drive"
-    signup_url: "https://account.proton.me/signup"
+    url: "https://go.getproton.me/aff_c?offer_id=43&aff_id=16236"
+    signup_url: "https://go.getproton.me/aff_c?offer_id=43&aff_id=16236"
+    info_url: "https://proton.me/drive"
     tagline: "Secure cloud storage with end-to-end encryption"
     icon: "drive"
     color: "#6d4aff"
+    promo: "$1 / €1 first month"
 
   vpn:
     name: "Proton VPN"
-    url: "https://protonvpn.com"
-    signup_url: "https://account.protonvpn.com/signup"
+    url: "https://go.getproton.me/aff_c?offer_id=26&aff_id=16236"
+    signup_url: "https://go.getproton.me/aff_c?offer_id=26&aff_id=16236"
+    info_url: "https://protonvpn.com"
     tagline: "High-speed Swiss VPN that protects your privacy"
     icon: "vpn"
     color: "#6d4aff"
+    promo: "64% off"
 
   calendar:
     name: "Proton Calendar"
-    url: "https://proton.me/calendar"
-    signup_url: "https://account.proton.me/signup"
+    url: "https://go.getproton.me/aff_c?offer_id=7&aff_id=16236"
+    signup_url: "https://go.getproton.me/aff_c?offer_id=7&aff_id=16236"
+    info_url: "https://proton.me/calendar"
     tagline: "Your schedule is your business, not ours"
     icon: "calendar"
     color: "#6d4aff"
 
   pass:
     name: "Proton Pass"
-    url: "https://proton.me/pass"
-    signup_url: "https://account.proton.me/signup"
+    url: "https://go.getproton.me/aff_c?offer_id=38&aff_id=16236"
+    signup_url: "https://go.getproton.me/aff_c?offer_id=38&aff_id=16236"
+    info_url: "https://proton.me/pass"
     tagline: "Open-source password manager with E2E encryption"
     icon: "pass"
     color: "#6d4aff"
+    promo: "50% off"
 
   # Bundle/Suite
   unlimited:
     name: "Proton Unlimited"
-    url: "https://proton.me/pricing"
-    signup_url: "https://account.proton.me/signup"
+    url: "https://go.getproton.me/aff_c?offer_id=26&aff_id=16236&url_id=1198"
+    signup_url: "https://go.getproton.me/aff_c?offer_id=26&aff_id=16236&url_id=1198"
+    info_url: "https://proton.me/pricing"
     tagline: "All Proton services in one privacy suite"
     icon: "proton"
     color: "#6d4aff"

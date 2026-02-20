@@ -75,14 +75,16 @@
   }
 }
 
-// Google side
+// Google side - uses official Google red #EA4335
 .comparison-google {
-  background: rgba($google-red, 0.05);
-  border-bottom: $border-width solid $border-primary;
+  background: rgba($google-red, 0.08);
+  border-bottom: $border-width solid rgba($google-red, 0.2);
+  border-left: 3px solid $google-red;
 
   @media (min-width: $breakpoint-md) {
     border-bottom: none;
     border-right: $border-width solid $border-primary;
+    border-left: 3px solid $google-red;
   }
 
   .comparison-header {
@@ -273,19 +275,21 @@
 }
 
 // =============================================================================
-// PATHWAY CARD (for Alternatives knowledge base)
+// PATHWAY CARD (for Alternatives knowledge base) - Compact inline style
 // =============================================================================
 
 .pathway-card {
   display: flex;
-  flex-direction: column;
-  padding: $space-8;
+  flex-direction: row;
+  align-items: center;
+  gap: $space-4;
+  padding: $space-4 $space-5;
 
   .pathway-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: $space-4;
-    padding: $space-3;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    padding: $space-2;
     background: rgba($accent-secondary, 0.1);
     border: $border-width solid rgba($accent-secondary, 0.2);
     border-radius: $radius-lg;
@@ -297,28 +301,35 @@
     }
   }
 
+  .pathway-body {
+    flex: 1;
+    min-width: 0;
+  }
+
   h3 {
-    font-size: $text-xl;
-    margin-bottom: $space-2;
+    font-size: $text-base;
+    margin-bottom: 0;
   }
 
   p {
     color: $text-muted;
-    margin-bottom: $space-4;
-    flex: 1;
+    font-size: $text-sm;
+    margin-bottom: 0;
+    line-height: $leading-snug;
   }
 
   .pathway-link {
     display: inline-flex;
     align-items: center;
-    gap: $space-2;
+    gap: $space-1;
     color: $accent-secondary-light;
     font-weight: $font-semibold;
     font-size: $text-sm;
+    white-space: nowrap;
 
     svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
       transition: transform $transition-fast;
     }
 

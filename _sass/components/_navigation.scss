@@ -40,7 +40,7 @@
   transition: color $transition-fast;
 
   &:hover {
-    color: $proton-purple-light;
+    color: $accent-light;
   }
 
   .logo-icon {
@@ -50,7 +50,7 @@
 
   .logo-text {
     span {
-      color: $proton-purple-light;
+      color: $accent-light;
     }
   }
 }
@@ -80,8 +80,8 @@
   }
 
   &.active {
-    color: $proton-purple-light;
-    background: rgba($proton-purple, 0.1);
+    color: $accent-light;
+    background: rgba($accent, 0.1);
   }
 }
 
@@ -92,7 +92,7 @@
   &:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
   }
 }
 
@@ -137,6 +137,12 @@
   }
 }
 
+.dropdown-divider {
+  height: 1px;
+  background: $border-primary;
+  margin: $space-2 $space-4;
+}
+
 .dropdown-item {
   display: flex;
   align-items: center;
@@ -149,13 +155,13 @@
 
   &:hover {
     color: $text-primary;
-    background: rgba($proton-purple, 0.1);
+    background: rgba($accent, 0.1);
   }
 
   .dropdown-icon {
     width: 20px;
     height: 20px;
-    color: $proton-purple-light;
+    color: $accent-light;
   }
 }
 
@@ -213,7 +219,7 @@
   border-bottom: $border-width solid $border-primary;
 
   &:hover {
-    color: $proton-purple-light;
+    color: $accent-light;
   }
 }
 

@@ -103,22 +103,22 @@ small, .text-sm {
 // -----------------------------------------------------------------------------
 
 a {
-  color: $proton-purple-light;
+  color: $accent-light;
   transition: color $transition-fast;
 
   &:hover {
-    color: $proton-purple;
+    color: $accent;
   }
 }
 
 // Prose links (inside content)
 .prose a {
   text-decoration: underline;
-  text-decoration-color: rgba($proton-purple-light, 0.4);
+  text-decoration-color: rgba($accent-light, 0.4);
   text-underline-offset: 2px;
 
   &:hover {
-    text-decoration-color: $proton-purple;
+    text-decoration-color: $accent;
   }
 }
 
@@ -151,7 +151,7 @@ a {
 // -----------------------------------------------------------------------------
 
 blockquote {
-  border-left: 4px solid $proton-purple;
+  border-left: 4px solid $accent;
   padding-left: $space-4;
   margin: $space-6 0;
   font-style: italic;
@@ -172,7 +172,7 @@ code {
   background-color: $bg-elevated;
   padding: 0.2em 0.4em;
   border-radius: $radius-md;
-  color: $proton-purple-light;
+  color: $accent-light;
 }
 
 pre {
@@ -201,7 +201,8 @@ pre {
 .text-primary { color: $text-primary; }
 .text-secondary { color: $text-secondary; }
 .text-muted { color: $text-muted; }
-.text-accent { color: $proton-purple-light; }
+.text-accent { color: $accent-light; }
+.text-accent-green { color: $accent-secondary-light; }
 .text-success { color: $success; }
 .text-danger { color: $danger; }
 
@@ -210,10 +211,7 @@ pre {
 .font-semibold { font-weight: $font-semibold; }
 .font-bold { font-weight: $font-bold; }
 
-// Gradient text
+// Accent text (clean solid color, no bright gradient)
 .text-gradient {
-  background: linear-gradient(135deg, $proton-purple-light 0%, $purple-400 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: $accent-light;
 }

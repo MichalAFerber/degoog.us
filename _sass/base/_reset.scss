@@ -91,13 +91,13 @@ hr {
 
 // Selection color
 ::selection {
-  background-color: rgba($proton-purple, 0.3);
+  background-color: rgba($accent, 0.3);
   color: $text-primary;
 }
 
 // Focus-visible outline for keyboard accessibility
 :focus-visible {
-  outline: 2px solid $proton-purple-light;
+  outline: 2px solid $accent-light;
   outline-offset: 2px;
 }
 

@@ -82,8 +82,7 @@ social:
   links:
     - "https://twitter.com/michalaferber"
 
-# Google Analytics (Optional - ironic, but useful for tracking)
-# google_analytics: ""
+# Zero trackers. Zero analytics. We practice what we preach.
 
 # Feed Settings
 feed:

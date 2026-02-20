@@ -5,66 +5,64 @@ description: "Learn about our mission to help people transition from Google serv
 permalink: /about/
 ---
 
-## Our Mission
+## The Mission
 
 De-Google.US exists for one purpose: **to help you reclaim your digital privacy**.
 
-We believe that privacy is a fundamental human right, not a feature you should have to pay extra for or sacrifice for convenience. The dominance of Google and other Big Tech companies has created a world where surveillance capitalism is the default, and true privacy requires conscious effort.
+Privacy is a fundamental right, not a premium feature. The dominance of Google and Big Tech has created a world where surveillance capitalism is the default—where your emails, searches, location, and calendar are mined for profit without your meaningful consent.
 
-We're here to make that effort easier.
+This site provides the roadmap out.
 
-## Who We Are
+## Who's Behind This
 
 De-Google.US is operated by **{{ site.author.company }}** (d.b.a. **{{ site.author.name }}**), a small digital privacy advocacy project based in {{ site.author.location }}.
 
-We're not a large corporation or a well-funded startup. We're privacy advocates who believe that everyone deserves access to clear, honest information about protecting their digital lives.
+This isn't a faceless startup or a content farm. Behind every guide on this site is **30 years of hands-on IT consulting experience**—designing enterprise networks, building secure infrastructure, and advising businesses on technology strategy. The migration architectures recommended here aren't theoretical. They're the same patterns deployed in real production environments for real clients.
+
+When you follow a guide on De-Google.US, you're getting advice vetted by a seasoned professional who has built and maintained the kind of infrastructure being recommended.
 
 ## Why We Focus on Proton
 
-After evaluating numerous privacy-focused service providers, we've chosen to focus on Proton for several reasons:
+After evaluating numerous privacy-focused service providers, Proton stands out for several reasons:
 
-1. **Comprehensive ecosystem**: Proton offers replacements for most Google services in one integrated suite
-2. **Swiss jurisdiction**: Strong privacy laws and no participation in surveillance alliances
-3. **Open source**: All apps can be independently verified
-4. **Proven track record**: Operating since 2014 with millions of users
+1. **Comprehensive ecosystem**: Replacements for most Google services in one integrated suite
+2. **Swiss jurisdiction**: Strong privacy laws, no participation in surveillance alliances
+3. **Open source**: Every app can be independently verified
+4. **Proven track record**: Operating since 2014 with over 100 million users
 5. **Accessible pricing**: Generous free tiers make privacy accessible to everyone
 
-We are an independent **Proton Partner**, which means we may earn a commission when you sign up for Proton services through our links. This helps support our work, but it does not influence our editorial content. We only recommend products we genuinely believe in.
+We are an independent **Proton Partner**, which means we may earn a commission when you sign up through our links. This supports the project but does not influence our editorial content. We only recommend tools we would use ourselves.
 
 ## Our Content Philosophy
 
 ### Honest Comparisons
 
-We provide factual comparisons between Google services and privacy alternatives. We don't exaggerate Google's flaws or oversell Proton's benefits. We present the information and let you decide.
+We provide factual comparisons between Google services and privacy alternatives. No exaggeration, no fearmongering. We present the facts and let you decide.
 
-### No Fear-Mongering
+### Practical, Expert-Vetted Advice
 
-Privacy is important, but we don't believe in scaring people into action. We focus on education and empowerment, not fear.
-
-### Practical Advice
-
-We know that going from Google to privacy-first services isn't always easy. Our guides are designed to be practical and achievable, even for non-technical users.
+Our guides are built for real-world migration. Step-by-step, with the kind of detail that comes from actually doing this work for decades—not just writing about it.
 
 ### Transparency
 
-We're upfront about our affiliate relationships and our limitations. We're not security researchers or legal experts—we're privacy advocates sharing what we've learned.
+We're upfront about our affiliate relationships. We don't accept sponsored content. Our recommendations are our own.
 
-## What We Don't Do
+## What This Site Doesn't Do
 
-- **We don't collect your data**: We practice what we preach
-- **We don't use Google services**: No Google Analytics, no Google Fonts, nothing
-- **We don't accept sponsored content**: Our recommendations are our own
-- **We don't make guarantees**: Privacy is a journey, not a destination
+- **Collect your data**: We practice what we preach—zero trackers, zero analytics, zero Google fonts
+- **Use Google services**: Nothing from Google touches this site
+- **Accept sponsored content**: Every recommendation is independent
+- **Make guarantees**: Privacy is a journey, and we're honest about the tradeoffs
 
 ## Get Involved
 
-The best way to support our mission is to:
+The best way to support the mission:
 
-1. **Share our content** with friends and family who might benefit
-2. **Use our affiliate links** if you decide to try Proton services
-3. **Send us feedback** about what content would be helpful
+1. **Share these guides** with friends and family who need them
+2. **Use our partner links** if you decide to try Proton services
+3. **Send us feedback** on what guides would be most useful
 
-## Contact Us
+## Contact
 
 Have questions, suggestions, or just want to say hello?
 
@@ -74,4 +72,4 @@ We read every email, though we may not be able to respond to all of them.
 
 ---
 
-*Thank you for being part of the privacy movement. Every person who takes control of their digital life makes the internet a little bit better for everyone.*
+*Every person who takes control of their digital life makes the internet a little bit better for everyone.*

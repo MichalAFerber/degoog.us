@@ -25,21 +25,21 @@
   }
 
   &:focus-visible {
-    outline: 2px solid $proton-purple-light;
+    outline: 2px solid $accent-light;
     outline-offset: 2px;
     box-shadow: $shadow-glow-sm;
   }
 }
 
-// Primary button - Proton purple
+// Primary button - solid Proton purple (no gradient)
 .btn-primary {
-  background: linear-gradient(135deg, $proton-purple 0%, $proton-purple-dark 100%);
+  background: $accent;
   color: white;
-  border-color: $proton-purple;
+  border-color: $accent;
 
   &:hover {
-    background: linear-gradient(135deg, $proton-purple-light 0%, $proton-purple 100%);
-    border-color: $proton-purple-light;
+    background: $accent-light;
+    border-color: $accent-light;
     box-shadow: $shadow-glow-sm;
     transform: translateY(-1px);
   }
@@ -56,9 +56,27 @@
   border-color: $border-secondary;
 
   &:hover {
-    border-color: $proton-purple;
-    color: $proton-purple-light;
-    background: rgba($proton-purple, 0.1);
+    border-color: $accent;
+    color: $accent-light;
+    background: rgba($accent, 0.1);
+  }
+}
+
+// Green accent button (for trust/start actions)
+.btn-green {
+  background: $accent-secondary;
+  color: white;
+  border-color: $accent-secondary;
+
+  &:hover {
+    background: $accent-secondary-light;
+    border-color: $accent-secondary-light;
+    box-shadow: $shadow-glow-green;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 }
 

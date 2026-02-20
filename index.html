@@ -6,49 +6,72 @@ description: "Your comprehensive guide to transitioning from Google services to 
 
 <!-- Hero Section -->
 <section class="hero">
-  <div class="hero-bg">
-    <div class="hero-orb orb-1"></div>
-    <div class="hero-orb orb-2"></div>
-  </div>
+  <div class="hero-bg"></div>
   <div class="container">
     <div class="hero-content">
       <span class="hero-badge">
-        Privacy First
+        Zero Trackers &bull; Zero Google Fonts &bull; Zero Compromise
       </span>
       <h1 class="hero-title">
         It's Time to <span class="text-gradient">De-Google</span> Your Life
       </h1>
       <p class="hero-description">
-        Google knows more about you than your closest friends. Your emails, your searches, your location, your calendar—all mined for profit. Take back control with privacy-first alternatives.
+        Google monetizes your emails, searches, location, and calendar. You are the product. This site exists to help you take it all back—with expert-vetted migration guides and privacy-first alternatives.
       </p>
       <div class="hero-actions">
-        <a href="{{ site.data.partners.proton.unlimited.signup_url }}{{ site.data.partners.proton.partner_id }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-          Start Free with Proton
+        <a href="{{ '/guide/' | relative_url }}" class="btn btn-green btn-lg">
+          Start Here
           {% include icons/arrow-right.svg %}
         </a>
-        <a href="#quick-start" class="btn btn-secondary btn-lg">
-          See the Comparison
+        <a href="#alternatives" class="btn btn-secondary btn-lg">
+          Explore Alternatives
         </a>
       </div>
 
-      <!-- Stats -->
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="stat-value">100M+</div>
-          <div class="stat-label">Proton Users</div>
+      <!-- Trust bar -->
+      <div class="trust-bar">
+        <span class="trust-badge">No Analytics</span>
+        <span class="trust-badge">No Google Fonts</span>
+        <span class="trust-badge">No Third-Party Trackers</span>
+        <span class="trust-badge">Open Source</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Migration Pathways -->
+<section class="section" id="alternatives">
+  <div class="container">
+    <header class="section-header">
+      <h2 class="section-title">Choose Your Migration Path</h2>
+      <p class="section-subtitle">
+        Structured guides based on the services you want to replace. Each pathway walks you through the full migration, step by step.
+      </p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <div class="card pathway-card">
+        <div class="pathway-icon">
+          {% include icons/mail.svg %}
         </div>
-        <div class="hero-stat">
-          <div class="stat-value">E2E</div>
-          <div class="stat-label">Encryption</div>
+        <h3>Communication</h3>
+        <p>Migrate to secure email, encrypted messaging, and a VPN that doesn't log your traffic. The natural home for Proton Mail, Proton VPN, and other privacy-first communication tools.</p>
+        <a href="{{ '/alternatives/communication/' | relative_url }}" class="pathway-link">
+          Start migration guide
+          {% include icons/arrow-right.svg %}
+        </a>
+      </div>
+
+      <div class="card pathway-card">
+        <div class="pathway-icon">
+          {% include icons/drive.svg %}
         </div>
-        <div class="hero-stat">
-          <div class="stat-value">Swiss</div>
-          <div class="stat-label">Privacy Laws</div>
-        </div>
-        <div class="hero-stat">
-          <div class="stat-value">Open</div>
-          <div class="stat-label">Source Code</div>
-        </div>
+        <h3>Cloud Storage</h3>
+        <p>Ditch Google Drive for a robust 3-2-1 backup strategy. Tutorials on self-hosting with Synology NAS, Proxmox, and encrypted offsite backups with Wasabi.</p>
+        <a href="{{ '/alternatives/cloud-storage/' | relative_url }}" class="pathway-link">
+          Start migration guide
+          {% include icons/arrow-right.svg %}
+        </a>
       </div>
     </div>
   </div>
@@ -129,7 +152,7 @@ description: "Your comprehensive guide to transitioning from Google services to 
     <header class="section-header">
       <h2 class="section-title">Quick Start: Replace Google Services</h2>
       <p class="section-subtitle">
-        For every Google service you use, there's a privacy-respecting Proton alternative.
+        For every Google service you use, there's a privacy-respecting alternative.
       </p>
     </header>
 
@@ -202,6 +225,6 @@ description: "Your comprehensive guide to transitioning from Google services to 
 
 <!-- CTA Banner -->
 {% include cta-banner.html
-   title="Ready to Reclaim Your Privacy?"
+   title="Ready to Take Back Your Privacy?"
    text="Join over 100 million users who have made the switch to Proton. Start for free today."
 %}

@@ -1,12 +1,12 @@
 # =============================================================================
 # DE-GOOGLE.US - Jekyll Configuration
-# Expert-vetted guides for reclaiming your digital privacy
+# A privacy-focused resource for transitioning from Google to Proton
 # =============================================================================
 
 # Site Settings
 title: "De-Google.US"
-tagline: "Take Back Your Data"
-description: "Your comprehensive guide to reclaiming your digital privacy. Migration guides, privacy-first alternatives, and expert strategies for breaking free from Big Tech surveillance."
+tagline: "Reclaim Your Digital Privacy"
+description: "Your comprehensive guide to transitioning from Google services to Proton's privacy-first ecosystem. Learn why privacy matters and how to make the switch."
 url: "https://de-google.us"
 baseurl: ""
 lang: "en-US"
@@ -16,7 +16,7 @@ author:
   name: "TechGuyWithABeard"
   company: "ThompsonBlack LLC"
   location: "Florence, SC"
-  email: "support@degoog.us"
+  email: "support@de-google.us"
 
 # Build Settings
 markdown: kramdown

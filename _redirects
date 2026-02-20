@@ -2,7 +2,7 @@
 # https://developers.cloudflare.com/pages/platform/redirects/
 
 # Redirect www to non-www
-https://www.degoog.us/* https://degoog.us/:splat 301
+https://www.de-google.us/* https://de-google.us/:splat 301
 
 # Old URLs (add as needed)
 # /old-page /new-page 301

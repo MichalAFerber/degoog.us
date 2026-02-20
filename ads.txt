@@ -1,8 +1,8 @@
-# ads.txt for degoog.us
+# ads.txt for de-google.us
 # This file declares authorized digital sellers for this domain.
 # https://iabtechlab.com/ads-txt/
 
-# DeGoog.us does not run programmatic advertising.
+# De-Google.US does not run programmatic advertising.
 # We are an affiliate partner of Proton AG.
 
 # If you add advertising networks in the future, add their entries here.

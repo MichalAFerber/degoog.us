@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Contact Us"
-description: "Get in touch with the DeGoog.us team. We'd love to hear from you."
+description: "Get in touch with the De-Google.US team. We'd love to hear from you."
 permalink: /contact/
 show_cta: false
 ---

@@ -16,19 +16,19 @@
   }
 }
 
-// Background patterns
+// Background - subtle grid pattern, no bright gradient orbs
 .hero-bg {
   position: absolute;
   inset: 0;
   pointer-events: none;
   overflow: hidden;
 
-  // Gradient overlay
+  // Subtle top glow
   &::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at top, rgba($proton-purple, 0.15) 0%, transparent 70%);
+    background: radial-gradient(ellipse at top, rgba($accent, 0.08) 0%, transparent 60%);
   }
 
   // Grid pattern
@@ -37,48 +37,9 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba($proton-purple, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba($proton-purple, 0.03) 1px, transparent 1px);
+      linear-gradient(rgba($accent, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba($accent, 0.02) 1px, transparent 1px);
     background-size: 50px 50px;
-  }
-}
-
-// Floating orb keyframes
-@keyframes orb-float-1 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(30px, -20px) scale(1.05); }
-  66% { transform: translate(-20px, 15px) scale(0.95); }
-}
-
-@keyframes orb-float-2 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(-25px, 20px) scale(0.95); }
-  66% { transform: translate(15px, -25px) scale(1.05); }
-}
-
-// Floating orbs
-.hero-orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.4;
-
-  &.orb-1 {
-    width: 400px;
-    height: 400px;
-    background: $proton-purple;
-    top: -100px;
-    right: -100px;
-    animation: orb-float-1 12s ease-in-out infinite;
-  }
-
-  &.orb-2 {
-    width: 300px;
-    height: 300px;
-    background: $purple-600;
-    bottom: -50px;
-    left: -100px;
-    animation: orb-float-2 15s ease-in-out infinite;
   }
 }
 
@@ -98,9 +59,9 @@
   font-weight: $font-semibold;
   text-transform: uppercase;
   letter-spacing: $tracking-wide;
-  color: $proton-purple-light;
-  background: rgba($proton-purple, 0.15);
-  border: $border-width solid rgba($proton-purple, 0.3);
+  color: $accent-secondary-light;
+  background: rgba($accent-secondary, 0.1);
+  border: $border-width solid rgba($accent-secondary, 0.25);
   border-radius: $radius-full;
   margin-bottom: $space-6;
 }
@@ -121,14 +82,11 @@
   }
 
   .highlight {
-    color: $proton-purple-light;
+    color: $accent-light;
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, $proton-purple-light 0%, $purple-400 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: $accent-light;
   }
 }
 
@@ -191,12 +149,11 @@
     box-shadow: $shadow-2xl;
   }
 
-  // Decorative frame
   &::before {
     content: '';
     position: absolute;
     inset: -$space-4;
-    border: $border-width-2 solid rgba($proton-purple, 0.3);
+    border: $border-width-2 solid rgba($accent, 0.2);
     border-radius: $radius-3xl;
     z-index: -1;
   }
@@ -223,7 +180,7 @@
   .stat-value {
     font-size: $text-3xl;
     font-weight: $font-extrabold;
-    color: $proton-purple-light;
+    color: $accent-secondary-light;
 
     @media (min-width: $breakpoint-md) {
       font-size: $text-4xl;
@@ -234,5 +191,35 @@
     font-size: $text-sm;
     color: $text-muted;
     margin-top: $space-1;
+  }
+}
+
+// Zero-Tracker Trust Bar
+.trust-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $space-3;
+  margin-top: $space-10;
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  padding: $space-1 $space-3;
+  font-size: $text-xs;
+  font-weight: $font-medium;
+  color: $text-muted;
+  background: rgba($dark-700, 0.5);
+  border: $border-width solid $border-primary;
+  border-radius: $radius-full;
+
+  &::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $accent-secondary;
   }
 }

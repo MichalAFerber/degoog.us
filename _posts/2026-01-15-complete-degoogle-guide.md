@@ -1,5 +1,5 @@
 ---
-title: "The Complete Guide to DeGoogling Your Life"
+title: "The Complete Guide to De-Googling Your Life"
 description: "A step-by-step guide to replacing every Google service with privacy-respecting alternatives. Take back control of your digital life."
 date: 2026-01-15
 author: "TechGuyWithABeard"
@@ -11,7 +11,7 @@ Google has become so deeply embedded in our digital lives that the idea of leavi
 
 The good news: you don't have to do it all at once. This guide will walk you through replacing each Google service, one step at a time.
 
-## Why DeGoogle?
+## Why De-Google?
 
 Before diving into the how, let's revisit the why:
 
@@ -139,7 +139,7 @@ Don't try to do everything at once. Here's a realistic timeline:
 
 ## What You'll Gain
 
-After completing your DeGoogle journey:
+After completing your de-Google journey:
 
 - **Privacy**: Your data stays your data
 - **Security**: No single point of failure
@@ -149,7 +149,7 @@ After completing your DeGoogle journey:
 The path to privacy isn't always convenient, but it's always worth it.
 
 {% include cta-inline.html
-   title="Start Your DeGoogle Journey"
+   title="Start Your De-Google Journey"
    text="Get all Proton services in one privacy suite with Proton Unlimited."
    product="unlimited"
 %}

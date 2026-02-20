@@ -10,7 +10,7 @@
   transition: all $transition-slow;
 
   &:hover {
-    border-color: rgba($proton-purple, 0.4);
+    border-color: rgba($accent, 0.3);
     box-shadow: $shadow-glow-sm;
     transform: translateY(-2px);
   }
@@ -28,7 +28,7 @@
 
 .card-glow {
   &:hover {
-    border-color: rgba($proton-purple, 0.5);
+    border-color: rgba($accent, 0.4);
     box-shadow: $shadow-glow-sm;
   }
 }
@@ -75,9 +75,9 @@
   }
 }
 
-// Google side - "Anti-Privacy"
+// Google side
 .comparison-google {
-  background: linear-gradient(135deg, rgba($google-red, 0.1) 0%, rgba($google-red, 0.05) 100%);
+  background: rgba($google-red, 0.05);
   border-bottom: $border-width solid $border-primary;
 
   @media (min-width: $breakpoint-md) {
@@ -95,7 +95,7 @@
 
   .issue-item {
     &::before {
-      content: "✗";
+      content: "\2717";
       color: $google-red;
       font-weight: $font-bold;
       margin-right: $space-2;
@@ -103,21 +103,21 @@
   }
 }
 
-// Proton side - "Pro-Privacy"
+// Proton side
 .comparison-proton {
-  background: linear-gradient(135deg, rgba($proton-purple, 0.1) 0%, rgba($proton-purple, 0.05) 100%);
+  background: rgba($accent, 0.05);
 
   .comparison-header {
-    color: $proton-purple-light;
+    color: $accent-light;
   }
 
   .comparison-icon {
-    color: $proton-purple-light;
+    color: $accent-light;
   }
 
   .feature-item {
     &::before {
-      content: "✓";
+      content: "\2713";
       color: $success;
       font-weight: $font-bold;
       margin-right: $space-2;
@@ -193,9 +193,9 @@
     height: 64px;
     margin: 0 auto $space-4;
     padding: $space-4;
-    background: rgba($proton-purple, 0.1);
+    background: rgba($accent, 0.1);
     border-radius: $radius-xl;
-    color: $proton-purple-light;
+    color: $accent-light;
 
     svg {
       width: 100%;
@@ -228,9 +228,9 @@
     height: 48px;
     margin-bottom: $space-4;
     padding: $space-3;
-    background: rgba($proton-purple, 0.15);
+    background: rgba($accent, 0.15);
     border-radius: $radius-lg;
-    color: $proton-purple-light;
+    color: $accent-light;
 
     svg {
       width: 100%;
@@ -253,12 +253,68 @@
     display: inline-flex;
     align-items: center;
     gap: $space-2;
-    color: $proton-purple-light;
+    color: $accent-light;
     font-weight: $font-semibold;
 
     &:hover {
       gap: $space-3;
     }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      transition: transform $transition-fast;
+    }
+
+    &:hover svg {
+      transform: translateX(4px);
+    }
+  }
+}
+
+// =============================================================================
+// PATHWAY CARD (for Alternatives knowledge base)
+// =============================================================================
+
+.pathway-card {
+  display: flex;
+  flex-direction: column;
+  padding: $space-8;
+
+  .pathway-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: $space-4;
+    padding: $space-3;
+    background: rgba($accent-secondary, 0.1);
+    border: $border-width solid rgba($accent-secondary, 0.2);
+    border-radius: $radius-lg;
+    color: $accent-secondary-light;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  h3 {
+    font-size: $text-xl;
+    margin-bottom: $space-2;
+  }
+
+  p {
+    color: $text-muted;
+    margin-bottom: $space-4;
+    flex: 1;
+  }
+
+  .pathway-link {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-2;
+    color: $accent-secondary-light;
+    font-weight: $font-semibold;
+    font-size: $text-sm;
 
     svg {
       width: 16px;

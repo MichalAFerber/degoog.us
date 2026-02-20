@@ -1,13 +1,13 @@
 # =============================================================================
-# DEGOOG.US - Jekyll Configuration
-# A privacy-focused resource for transitioning from Google to Proton
+# DE-GOOGLE.US - Jekyll Configuration
+# Expert-vetted guides for reclaiming your digital privacy
 # =============================================================================
 
 # Site Settings
-title: "DeGoog.us"
-tagline: "Reclaim Your Digital Privacy"
-description: "Your comprehensive guide to transitioning from Google services to Proton's privacy-first ecosystem. Learn why privacy matters and how to make the switch."
-url: "https://degoog.us"
+title: "De-Google.US"
+tagline: "Take Back Your Data"
+description: "Your comprehensive guide to reclaiming your digital privacy. Migration guides, privacy-first alternatives, and expert strategies for breaking free from Big Tech surveillance."
+url: "https://de-google.us"
 baseurl: ""
 lang: "en-US"
 
@@ -78,12 +78,11 @@ twitter:
   card: "summary_large_image"
 
 social:
-  name: "DeGoog.us"
+  name: "De-Google.US"
   links:
     - "https://twitter.com/michalaferber"
 
-# Google Analytics (Optional - ironic, but useful for tracking)
-# google_analytics: ""
+# Zero trackers. Zero analytics. We practice what we preach.
 
 # Feed Settings
 feed:

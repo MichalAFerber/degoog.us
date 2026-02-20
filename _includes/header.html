@@ -3,7 +3,7 @@
     <nav class="nav-container">
       <!-- Logo -->
       <a href="{{ '/' | relative_url }}" class="site-logo">
-        <span class="logo-text">De<span>Goog</span>.us</span>
+        <span class="logo-text">De-<span>Google</span>.US</span>
       </a>
 
       <!-- Desktop Navigation -->
@@ -12,27 +12,32 @@
 
         <div class="nav-dropdown">
           <button class="nav-link dropdown-trigger">
-            Products
+            Alternatives
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
             </svg>
           </button>
           <div class="dropdown-menu">
+            <a href="{{ '/alternatives/communication/' | relative_url }}" class="dropdown-item">
+              <span class="dropdown-icon">{% include icons/mail.svg %}</span>
+              Communication
+            </a>
+            <a href="{{ '/alternatives/cloud-storage/' | relative_url }}" class="dropdown-item">
+              <span class="dropdown-icon">{% include icons/drive.svg %}</span>
+              Cloud Storage
+            </a>
+            <div class="dropdown-divider"></div>
             <a href="{{ '/products/mail/' | relative_url }}" class="dropdown-item">
               <span class="dropdown-icon">{% include icons/mail.svg %}</span>
               Proton Mail
-            </a>
-            <a href="{{ '/products/drive/' | relative_url }}" class="dropdown-item">
-              <span class="dropdown-icon">{% include icons/drive.svg %}</span>
-              Proton Drive
             </a>
             <a href="{{ '/products/vpn/' | relative_url }}" class="dropdown-item">
               <span class="dropdown-icon">{% include icons/vpn.svg %}</span>
               Proton VPN
             </a>
-            <a href="{{ '/products/calendar/' | relative_url }}" class="dropdown-item">
-              <span class="dropdown-icon">{% include icons/calendar.svg %}</span>
-              Proton Calendar
+            <a href="{{ '/products/drive/' | relative_url }}" class="dropdown-item">
+              <span class="dropdown-icon">{% include icons/drive.svg %}</span>
+              Proton Drive
             </a>
             <a href="{{ '/products/pass/' | relative_url }}" class="dropdown-item">
               <span class="dropdown-icon">{% include icons/pass.svg %}</span>
@@ -47,8 +52,8 @@
 
       <!-- Desktop CTA -->
       <div class="nav-cta hidden md:block">
-        <a href="{{ site.data.partners.proton.unlimited.signup_url }}{{ site.data.partners.proton.partner_id }}" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
-          Get Started Free
+        <a href="{{ '/guide/' | relative_url }}" class="btn btn-primary btn-sm">
+          Start Here
         </a>
       </div>
 
@@ -67,18 +72,18 @@
   <!-- Mobile Navigation -->
   <nav class="nav-mobile" id="nav-mobile">
     <a href="{{ '/' | relative_url }}" class="nav-mobile-link">Home</a>
-    <a href="{{ '/products/' | relative_url }}" class="nav-mobile-link">Products</a>
+    <a href="{{ '/alternatives/communication/' | relative_url }}" class="nav-mobile-link">Communication</a>
+    <a href="{{ '/alternatives/cloud-storage/' | relative_url }}" class="nav-mobile-link">Cloud Storage</a>
     <a href="{{ '/products/mail/' | relative_url }}" class="nav-mobile-link" style="padding-left: 2rem;">Proton Mail</a>
-    <a href="{{ '/products/drive/' | relative_url }}" class="nav-mobile-link" style="padding-left: 2rem;">Proton Drive</a>
     <a href="{{ '/products/vpn/' | relative_url }}" class="nav-mobile-link" style="padding-left: 2rem;">Proton VPN</a>
-    <a href="{{ '/products/calendar/' | relative_url }}" class="nav-mobile-link" style="padding-left: 2rem;">Proton Calendar</a>
+    <a href="{{ '/products/drive/' | relative_url }}" class="nav-mobile-link" style="padding-left: 2rem;">Proton Drive</a>
     <a href="{{ '/products/pass/' | relative_url }}" class="nav-mobile-link" style="padding-left: 2rem;">Proton Pass</a>
     <a href="{{ '/blog/' | relative_url }}" class="nav-mobile-link">Blog</a>
     <a href="{{ '/about/' | relative_url }}" class="nav-mobile-link">About</a>
 
     <div class="nav-mobile-cta">
-      <a href="{{ site.data.partners.proton.unlimited.signup_url }}{{ site.data.partners.proton.partner_id }}" class="btn btn-primary btn-block" target="_blank" rel="noopener">
-        Get Started Free
+      <a href="{{ '/guide/' | relative_url }}" class="btn btn-primary btn-block">
+        Start Here
       </a>
     </div>
   </nav>

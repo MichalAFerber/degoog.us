@@ -1,5 +1,5 @@
 /**
- * DeGoog.us - Main JavaScript
+ * De-Google.US - Main JavaScript
  */
 
 (function() {

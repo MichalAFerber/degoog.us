@@ -1,11 +1,11 @@
-# robots.txt for degoog.us
+# robots.txt for de-google.us
 # https://www.robotstxt.org/
 
 User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://degoog.us/sitemap.xml
+Sitemap: https://de-google.us/sitemap.xml
 
 # Crawl-delay (optional, for polite crawlers)
 Crawl-delay: 1

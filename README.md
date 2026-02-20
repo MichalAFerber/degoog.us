@@ -1,10 +1,10 @@
-# DeGoog.us
+# De-Google.US
 
 Your comprehensive guide to transitioning from Google services to [Proton's](https://proton.me) privacy-first ecosystem.
 
 ## About
 
-[DeGoog.us](https://degoog.us) is an educational website that helps users understand the privacy implications of using Google services and provides step-by-step guidance for switching to privacy-respecting alternatives from Proton.
+[De-Google.US](https://de-google.us) is an educational website that helps users understand the privacy implications of using Google services and provides step-by-step guidance for switching to privacy-respecting alternatives from Proton.
 
 ### Features
 

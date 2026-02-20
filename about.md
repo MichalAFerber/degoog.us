@@ -1,13 +1,13 @@
 ---
 layout: page
-title: "About DeGoog.us"
+title: "About De-Google.US"
 description: "Learn about our mission to help people transition from Google services to privacy-respecting alternatives."
 permalink: /about/
 ---
 
 ## Our Mission
 
-DeGoog.us exists for one purpose: **to help you reclaim your digital privacy**.
+De-Google.US exists for one purpose: **to help you reclaim your digital privacy**.
 
 We believe that privacy is a fundamental human right, not a feature you should have to pay extra for or sacrifice for convenience. The dominance of Google and other Big Tech companies has created a world where surveillance capitalism is the default, and true privacy requires conscious effort.
 
@@ -15,7 +15,7 @@ We're here to make that effort easier.
 
 ## Who We Are
 
-DeGoog.us is operated by **{{ site.author.company }}** (d.b.a. **{{ site.author.name }}**), a small digital privacy advocacy project based in {{ site.author.location }}.
+De-Google.US is operated by **{{ site.author.company }}** (d.b.a. **{{ site.author.name }}**), a small digital privacy advocacy project based in {{ site.author.location }}.
 
 We're not a large corporation or a well-funded startup. We're privacy advocates who believe that everyone deserves access to clear, honest information about protecting their digital lives.
 

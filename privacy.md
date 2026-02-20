@@ -1,14 +1,14 @@
 ---
 layout: page
 title: "Privacy Policy"
-description: "How DeGoog.us collects, uses, and protects your personal information."
+description: "How De-Google.US collects, uses, and protects your personal information."
 permalink: /privacy/
 show_cta: false
 ---
 
 **Last Updated: February 2026**
 
-At DeGoog.us, we practice what we preach. This privacy policy explains how we handle your information when you visit our website.
+At De-Google.US, we practice what we preach. This privacy policy explains how we handle your information when you visit our website.
 
 ## Our Privacy Philosophy
 

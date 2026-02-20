@@ -15,7 +15,7 @@ proton:
   partner_id: "?aff=16236"
 
   # Campaign tracking suffix (optional, append after partner_id)
-  # Example: ?ref=degoog&campaign=homepage
+  # Example: ?ref=de-google&campaign=homepage
   default_campaign: ""
 
   # Base URLs for each Proton product

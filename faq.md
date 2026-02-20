@@ -168,9 +168,9 @@ Proton VPN is among the best:
 
 ## About This Website
 
-### Who runs DeGoog.us?
+### Who runs De-Google.US?
 
-DeGoog.us is operated by ThompsonBlack LLC d.b.a. TechGuyWithABeard, a small digital privacy advocacy project based in Florence, SC. We're independent privacy advocates, not affiliated with Proton AG or Google LLC.
+De-Google.US is operated by ThompsonBlack LLC d.b.a. TechGuyWithABeard, a small digital privacy advocacy project based in Florence, SC. We're independent privacy advocates, not affiliated with Proton AG or Google LLC.
 
 ### Are you affiliated with Proton?
 

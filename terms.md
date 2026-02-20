@@ -1,14 +1,14 @@
 ---
 layout: page
 title: "Terms of Use"
-description: "Terms and conditions for using the DeGoog.us website."
+description: "Terms and conditions for using the De-Google.US website."
 permalink: /terms/
 show_cta: false
 ---
 
 **Last Updated: February 2026**
 
-By accessing and using DeGoog.us ("the Website"), you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use this website.
+By accessing and using De-Google.US ("the Website"), you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use this website.
 
 ## Acceptance of Terms
 

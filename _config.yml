@@ -1,13 +1,13 @@
 # =============================================================================
-# DEGOOG.US - Jekyll Configuration
+# DE-GOOGLE.US - Jekyll Configuration
 # A privacy-focused resource for transitioning from Google to Proton
 # =============================================================================
 
 # Site Settings
-title: "DeGoog.us"
+title: "De-Google.US"
 tagline: "Reclaim Your Digital Privacy"
 description: "Your comprehensive guide to transitioning from Google services to Proton's privacy-first ecosystem. Learn why privacy matters and how to make the switch."
-url: "https://degoog.us"
+url: "https://de-google.us"
 baseurl: ""
 lang: "en-US"
 
@@ -16,7 +16,7 @@ author:
   name: "TechGuyWithABeard"
   company: "ThompsonBlack LLC"
   location: "Florence, SC"
-  email: "support@degoog.us"
+  email: "support@de-google.us"
 
 # Build Settings
 markdown: kramdown
@@ -78,7 +78,7 @@ twitter:
   card: "summary_large_image"
 
 social:
-  name: "DeGoog.us"
+  name: "De-Google.US"
   links:
     - "https://twitter.com/michalaferber"
 

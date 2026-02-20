@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Disclaimer"
-description: "Important disclosures about DeGoog.us, our affiliate relationships, and the information provided on this website."
+description: "Important disclosures about De-Google.US, our affiliate relationships, and the information provided on this website."
 permalink: /disclaimer/
 show_cta: false
 ---
@@ -10,7 +10,7 @@ show_cta: false
 
 ## Affiliate Disclosure
 
-DeGoog.us is a participant in the **Proton Partner Program**, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Proton products and services.
+De-Google.US is a participant in the **Proton Partner Program**, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Proton products and services.
 
 This means that when you click on links to Proton products on this website and make a purchase or sign up for a service, we may receive a commission at no additional cost to you.
 
@@ -37,7 +37,7 @@ Use of these trademarks does not imply endorsement, sponsorship, or affiliation.
 
 ## No Professional Advice
 
-The information provided on DeGoog.us is for **general informational and educational purposes only**. It should not be considered:
+The information provided on De-Google.US is for **general informational and educational purposes only**. It should not be considered:
 
 - Legal advice
 - Financial advice

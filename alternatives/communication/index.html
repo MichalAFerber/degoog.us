@@ -1,0 +1,74 @@
+---
+layout: page
+title: "Communication Alternatives - Secure Email, VPN & Messaging"
+description: "Replace Gmail and Google's communication tools with end-to-end encrypted alternatives. Migration guides for Proton Mail, Proton VPN, and more."
+---
+
+<header class="section-header">
+  <h1 class="section-title">Communication Alternatives</h1>
+  <p class="section-subtitle">
+    Replace Gmail, Google's VPN, and other communication tools with privacy-first services that encrypt your data by default.
+  </p>
+</header>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+  {% assign mail = site.products | where: "product_key", "mail" | first %}
+  {% assign vpn = site.products | where: "product_key", "vpn" | first %}
+  {% assign pass = site.products | where: "product_key", "pass" | first %}
+
+  <div class="card product-card">
+    <div class="product-icon">
+      {% include icons/mail.svg %}
+    </div>
+    <h3>{{ site.data.partners.proton.mail.name }}</h3>
+    <p class="product-tagline">{{ site.data.partners.proton.mail.tagline }}</p>
+    <a href="{{ '/products/mail/' | relative_url }}" class="product-link">
+      Learn more {% include icons/arrow-right.svg %}
+    </a>
+  </div>
+
+  <div class="card product-card">
+    <div class="product-icon">
+      {% include icons/vpn.svg %}
+    </div>
+    <h3>{{ site.data.partners.proton.vpn.name }}</h3>
+    <p class="product-tagline">{{ site.data.partners.proton.vpn.tagline }}</p>
+    <a href="{{ '/products/vpn/' | relative_url }}" class="product-link">
+      Learn more {% include icons/arrow-right.svg %}
+    </a>
+  </div>
+
+  <div class="card product-card">
+    <div class="product-icon">
+      {% include icons/pass.svg %}
+    </div>
+    <h3>{{ site.data.partners.proton.pass.name }}</h3>
+    <p class="product-tagline">{{ site.data.partners.proton.pass.tagline }}</p>
+    <a href="{{ '/products/pass/' | relative_url }}" class="product-link">
+      Learn more {% include icons/arrow-right.svg %}
+    </a>
+  </div>
+
+  <div class="card product-card">
+    <div class="product-icon">
+      {% include icons/calendar.svg %}
+    </div>
+    <h3>{{ site.data.partners.proton.calendar.name }}</h3>
+    <p class="product-tagline">{{ site.data.partners.proton.calendar.tagline }}</p>
+    <a href="{{ '/products/calendar/' | relative_url }}" class="product-link">
+      Learn more {% include icons/arrow-right.svg %}
+    </a>
+  </div>
+</div>
+
+{% include comparison-card.html product="mail" %}
+
+<div class="mt-12">
+  {% include comparison-card.html product="vpn" %}
+</div>
+
+{% include cta-banner.html
+   title="Ready to Secure Your Communications?"
+   text="Start with Proton Mail — free, encrypted email that protects your conversations from surveillance."
+   product="mail"
+%}

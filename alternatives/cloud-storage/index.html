@@ -1,0 +1,40 @@
+---
+layout: page
+title: "Cloud Storage Alternatives - Encrypted File Storage & Backup"
+description: "Replace Google Drive with end-to-end encrypted cloud storage. Migration guide for Proton Drive and privacy-first backup strategies."
+---
+
+<header class="section-header">
+  <h1 class="section-title">Cloud Storage Alternatives</h1>
+  <p class="section-subtitle">
+    Replace Google Drive with encrypted cloud storage that keeps your files truly private. Only you hold the keys.
+  </p>
+</header>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+  <div class="card product-card">
+    <div class="product-icon">
+      {% include icons/drive.svg %}
+    </div>
+    <h3>{{ site.data.partners.proton.drive.name }}</h3>
+    <p class="product-tagline">{{ site.data.partners.proton.drive.tagline }}</p>
+    <a href="{{ '/products/drive/' | relative_url }}" class="product-link">
+      Learn more {% include icons/arrow-right.svg %}
+    </a>
+  </div>
+
+  <div class="card p-8">
+    <h3 class="mb-4">Self-Hosted Options</h3>
+    <p class="text-secondary">
+      For complete control, pair Proton Drive with a self-hosted NAS solution like Synology or Proxmox for a robust 3-2-1 backup strategy.
+    </p>
+  </div>
+</div>
+
+{% include comparison-card.html product="drive" %}
+
+{% include cta-banner.html
+   title="Encrypt Your Files Today"
+   text="Switch to Proton Drive and take back control of your cloud storage. Your files, your keys, your privacy."
+   product="drive"
+%}

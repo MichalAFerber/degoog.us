@@ -49,15 +49,17 @@ description: "Your comprehensive guide to reclaiming your digital privacy. Migra
       </p>
     </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
       <div class="card pathway-card">
         <div class="pathway-icon">
           {% include icons/mail.svg %}
         </div>
-        <h3>Communication</h3>
-        <p>Migrate to secure email, encrypted messaging, and a VPN that doesn't log your traffic. The natural home for Proton Mail, Proton VPN, and other privacy-first communication tools.</p>
+        <div class="pathway-body">
+          <h3>Communication</h3>
+          <p>Secure email, VPN & messaging</p>
+        </div>
         <a href="{{ '/alternatives/communication/' | relative_url }}" class="pathway-link">
-          Start migration guide
+          Go
           {% include icons/arrow-right.svg %}
         </a>
       </div>
@@ -66,10 +68,12 @@ description: "Your comprehensive guide to reclaiming your digital privacy. Migra
         <div class="pathway-icon">
           {% include icons/drive.svg %}
         </div>
-        <h3>Cloud Storage</h3>
-        <p>Ditch Google Drive for a robust 3-2-1 backup strategy. Tutorials on self-hosting with Synology NAS, Proxmox, and encrypted offsite backups with Wasabi.</p>
+        <div class="pathway-body">
+          <h3>Cloud Storage</h3>
+          <p>Encrypted files & backups</p>
+        </div>
         <a href="{{ '/alternatives/cloud-storage/' | relative_url }}" class="pathway-link">
-          Start migration guide
+          Go
           {% include icons/arrow-right.svg %}
         </a>
       </div>
@@ -146,6 +150,41 @@ description: "Your comprehensive guide to reclaiming your digital privacy. Migra
   </div>
 </section>
 
+<!-- The Shift is Happening - Survey Stats -->
+<section class="section">
+  <div class="container">
+    <header class="section-header">
+      <h2 class="section-title">The World Is Rethinking Big Tech</h2>
+      <p class="section-subtitle">
+        New research shows consumers are actively moving away from US tech platforms. The shift toward privacy-first European alternatives is accelerating.
+      </p>
+    </header>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="stat-value">74%</div>
+        <div class="stat-label">Concerned about reliance on US apps</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-value">57%</div>
+        <div class="stat-label">Would choose a European alternative</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-value">92%</div>
+        <div class="stat-label">Say security is their top priority</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-value">42%</div>
+        <div class="stat-label">More concerned than last year</div>
+      </div>
+    </div>
+
+    <p class="text-center mt-6" style="color: var(--text-muted, #94a3b8); font-size: 0.75rem;">
+      Source: Proton survey of 3,000 respondents across UK, France, and Germany (2026)
+    </p>
+  </div>
+</section>
+
 <!-- Quick Start Comparison Table -->
 <section class="section" id="quick-start">
   <div class="container">
@@ -218,6 +257,28 @@ description: "Your comprehensive guide to reclaiming your digital privacy. Migra
         <p class="text-secondary">
           Proton believes privacy is a human right, not a luxury. All services offer generous free tiers so everyone can access basic privacy protection regardless of their budget.
         </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Limited Time Offer -->
+<section class="section">
+  <div class="container">
+    <div class="card p-8 text-center" style="border-color: rgba(109, 74, 255, 0.4); background: linear-gradient(135deg, rgba(109, 74, 255, 0.08), rgba(30, 168, 133, 0.08));">
+      <span class="hero-badge">Limited Time Offer &bull; Ends March 31</span>
+      <h2 class="section-title mt-4">Proton Mail & Drive for $1 / &euro;1</h2>
+      <p class="section-subtitle">
+        Try Proton Mail or Proton Drive for just $1 your first month. Annual plans are 40% off. The lowest barrier to reclaiming your privacy.
+      </p>
+      <div class="btn-group" style="justify-content: center; margin-top: 1.5rem;">
+        <a href="{{ site.data.partners.proton.mail.signup_url }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+          Get Proton Mail for $1
+          {% include icons/arrow-right.svg %}
+        </a>
+        <a href="{{ site.data.partners.proton.drive.signup_url }}" class="btn btn-secondary btn-lg" target="_blank" rel="noopener">
+          Get Proton Drive for $1
+        </a>
       </div>
     </div>
   </div>

@@ -109,9 +109,14 @@
   gap: $space-4;
   justify-content: center;
   align-items: center;
+  margin-bottom: $space-8;
 
   @media (min-width: $breakpoint-sm) {
     flex-direction: row;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $space-12;
   }
 }
 

@@ -3,7 +3,8 @@
 // =============================================================================
 
 .site-footer {
-  background: $bg-secondary;
+  background: rgba($bg-primary, 0.95);
+  backdrop-filter: blur(12px);
   border-top: $border-width solid $border-primary;
   padding: $space-16 0 $space-8;
   margin-top: auto;

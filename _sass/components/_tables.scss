@@ -67,17 +67,19 @@ tbody {
   }
 }
 
-// Column headers
+// Column headers - Google official red #EA4335
 .comparison-table thead {
   th {
     &.col-google {
-      background: rgba($google-red, 0.1);
-      color: $google-red;
+      background: rgba($google-red, 0.15);
+      color: $google-red-light;
+      border-bottom: 2px solid $google-red;
     }
 
     &.col-proton {
       background: rgba($proton-purple, 0.15);
       color: $proton-purple-light;
+      border-bottom: 2px solid $proton-purple;
     }
   }
 }

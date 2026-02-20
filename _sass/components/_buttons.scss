@@ -8,6 +8,7 @@
   justify-content: center;
   gap: $space-2;
   padding: $space-3 $space-6;
+  font-family: $font-heading;
   font-size: $text-base;
   font-weight: $font-semibold;
   line-height: 1;
@@ -21,6 +22,12 @@
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $proton-purple-light;
+    outline-offset: 2px;
+    box-shadow: $shadow-glow-sm;
   }
 }
 
@@ -75,7 +82,7 @@
   border-color: $danger;
 
   &:hover {
-    background: lighten($danger, 5%);
+    background: #f25a5a;
     box-shadow: 0 0 20px rgba($danger, 0.3);
   }
 }

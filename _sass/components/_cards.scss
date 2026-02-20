@@ -7,10 +7,12 @@
   border: $border-width solid $border-primary;
   border-radius: $radius-xl;
   padding: $space-6;
-  transition: all $transition-base;
+  transition: all $transition-slow;
 
   &:hover {
-    border-color: $border-secondary;
+    border-color: rgba($proton-purple, 0.4);
+    box-shadow: $shadow-glow-sm;
+    transform: translateY(-2px);
   }
 }
 

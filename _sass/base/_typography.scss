@@ -2,14 +2,15 @@
 // TYPOGRAPHY
 // =============================================================================
 
-// Google Fonts Import
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+// Bunny Fonts Import (privacy-friendly, GDPR-compliant alternative to Google Fonts)
+@import url('https://fonts.bunny.net/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap');
 
 // -----------------------------------------------------------------------------
 // HEADINGS
 // -----------------------------------------------------------------------------
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
   font-weight: $font-bold;
   line-height: $leading-tight;
   color: $text-primary;

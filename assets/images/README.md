@@ -1,6 +1,6 @@
 # Image Assets
 
-This directory contains images for the DeGoog.us website.
+This directory contains images for the De-Google.US website.
 
 ## Directory Structure
 

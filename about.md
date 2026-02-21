@@ -1,13 +1,13 @@
 ---
 layout: page
 title: "About De-Google.US"
-description: "30 years of IT consulting experience, distilled into expert migration guides for reclaiming your digital privacy."
+description: "Learn about our mission to help people transition from Google services to privacy-respecting alternatives."
 permalink: /about/
 ---
 
 ## The Mission
 
-De-Google.US exists for one purpose: **to help you take back ownership of your data**.
+De-Google.US exists for one purpose: **to help you reclaim your digital privacy**.
 
 Privacy is a fundamental right, not a premium feature. The dominance of Google and Big Tech has created a world where surveillance capitalism is the default—where your emails, searches, location, and calendar are mined for profit without your meaningful consent.
 
@@ -15,7 +15,7 @@ This site provides the roadmap out.
 
 ## Who's Behind This
 
-De-Google.US is a project of **{{ site.author.company }}**, operating as **{{ site.author.name }}**, based in {{ site.author.location }}.
+De-Google.US is operated by **{{ site.author.company }}** (d.b.a. **{{ site.author.name }}**), a small digital privacy advocacy project based in {{ site.author.location }}.
 
 This isn't a faceless startup or a content farm. Behind every guide on this site is **30 years of hands-on IT consulting experience**—designing enterprise networks, building secure infrastructure, and advising businesses on technology strategy. The migration architectures recommended here aren't theoretical. They're the same patterns deployed in real production environments for real clients.
 

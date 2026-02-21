@@ -1,45 +1,58 @@
 ---
-title: "Proton Pass vs Chrome Password Manager - Secure Passwords"
+title: "Proton Pass vs Chrome Password Manager"
 product_key: pass
-description: "Replace Chrome's built-in password manager with Proton Pass for truly secure, encrypted password management."
-image: /assets/images/products/proton-pass.jpg
+description: "End-to-end encrypted password manager that protects not just your passwords, but all metadata too. Open source, audited, and built by the Proton team."
+image: /assets/images/products/pass/hero.png
+hero_image: /assets/images/products/pass/hero.png
+desktop_image: /assets/images/products/pass/desktop.jpg
+mobile_image: /assets/images/products/pass/mobile.jpg
 ---
 
 ## Why Switch from Chrome Passwords to Proton Pass?
 
-Chrome's built-in password manager stores your passwords in Google's cloud, tied to your Google account. If your Google account is compromised, so are all your passwords. Plus, Google can access your login credentials.
+Chrome's built-in password manager stores your passwords in Google's cloud, tied to your Google account. If your Google account is compromised, so are all your passwords. Most browsers store passwords with limited encryption, making them vulnerable to malware or local attacks.
 
-Proton Pass uses **end-to-end encryption** so that only you can access your passwords—not even Proton.
+Proton Pass uses **end-to-end encryption** so that only you can access your passwords — not even Proton. Unlike competitors, Proton Pass encrypts not just passwords but also metadata, email addresses, and URLs.
 
-## Key Benefits of Proton Pass
+## Key Benefits
 
-### End-to-End Encrypted
-All your passwords, secure notes, and login information are encrypted before leaving your device. Proton cannot see your credentials.
+### True Zero-Access Encryption
+All your passwords, secure notes, and login information are encrypted before leaving your device. Proton cannot see your credentials — your data is never visible to anyone but you, not even in encrypted form on the server.
 
-### Open Source & Audited
-Proton Pass is completely open source and has been independently audited by security experts. You can verify the security yourself.
+### Open Source & Independently Audited
+Proton Pass is completely open source and has been independently audited by security experts. All code is publicly available and regularly verified — you can verify the security yourself.
 
 ### Built-In 2FA Authenticator
-Proton Pass includes a built-in two-factor authentication (2FA) code generator, eliminating the need for a separate authenticator app.
+Store two-factor authentication codes directly alongside your logins. No need for a separate authenticator app — everything is encrypted and synced across devices.
 
-### Secure Password Sharing
-Share passwords securely with family members or team members without exposing them in plain text.
+### Hide-My-Email Aliases
+Manage multiple inboxes, combat spam, and protect your real email address with advanced email alias management — powered by Proton Mail integration.
 
-### Cross-Platform
-Use Proton Pass on any device with apps for iOS, Android, and browser extensions for all major browsers.
+### Custom Item Storage
+Store diverse data types including passports, WiFi codes, SSH keys, and credit cards in custom encrypted formats — everything in one secure vault.
+
+### Command-Line Interface
+For power users, the Proton Pass CLI enables terminal-based access to your credentials for enhanced productivity and security in development workflows.
 
 ### Dark Web Monitoring
-Proton Pass monitors the dark web for your email addresses and alerts you if your credentials appear in a breach.
+Proton monitors the dark web for your email addresses and alerts you if your credentials appear in a breach, so you can act immediately.
+
+### Secure Password Sharing
+Share passwords securely with family members or team members with end-to-end encryption — credentials are never exposed in plain text.
 
 ## Feature Comparison
 
 | Feature | Chrome Passwords | Proton Pass |
 |---------|-----------------|-------------|
 | E2E Encryption | No | Yes |
+| Metadata Encryption | No | Yes |
 | Open Source | No | Yes |
 | Built-in 2FA | No | Yes |
+| Email Aliases | No | Hide-My-Email |
 | Secure Sharing | No | Yes |
+| Custom Items (passports, SSH keys) | No | Yes |
 | Dark Web Monitoring | Limited | Yes |
+| CLI Access | No | Yes |
 | Cross-Platform | Chrome only | All platforms |
 | Independent Audit | No | Yes |
 
@@ -47,22 +60,10 @@ Proton Pass monitors the dark web for your email addresses and alerts you if you
 
 1. **Create your free Proton account** using the button above
 2. **Export Chrome passwords** (Settings > Passwords > Export)
-3. **Import into Proton Pass** with one click
-4. **Install browser extension** and mobile apps
+3. **Import into Proton Pass** with one click using the import tool
+4. **Install browser extensions** (Chrome, Firefox, Edge) and mobile apps
 5. **Disable Chrome's password manager** to avoid conflicts
 
-## Password Manager Features
+## Pricing
 
-Proton Pass free tier includes:
-- Unlimited passwords
-- 2 vaults
-- Built-in 2FA
-- Browser extensions
-- Mobile apps
-
-Proton Pass Plus includes:
-- Unlimited vaults
-- Secure sharing
-- Dark web monitoring
-- Priority support
-- Hide-my-email aliases
+Proton Pass free tier includes unlimited passwords, 2 vaults, built-in 2FA, browser extensions, and mobile apps. Proton Pass Plus adds unlimited vaults, secure sharing, dark web monitoring, hide-my-email aliases, and priority support.

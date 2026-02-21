@@ -6,57 +6,99 @@ This directory contains images for the De-Google.US website.
 
 ```
 images/
-├── blog/              # Blog post featured images
-├── products/          # Product page images
-├── proton/            # Proton marketing assets
-│   ├── mail/         # Proton Mail banners and visuals
-│   ├── vpn/          # Proton VPN banners and visuals
-│   └── banners/      # General promotional banners
-├── favicon.svg        # Site favicon
-├── og-default.jpg     # Default OpenGraph image (1200x630)
-└── logo.png          # Site logo
+├── products/              # Product page images (copied from assets/proton/)
+│   ├── mail/
+│   │   ├── logo.svg       # Proton Mail logomark
+│   │   ├── logo-full.svg  # Proton Mail logo + wordmark (white)
+│   │   ├── hero.png       # Hero module image
+│   │   ├── section-1.png  # Feature section image 1
+│   │   ├── section-2.png  # Feature section image 2
+│   │   ├── desktop.png    # Desktop app screenshot (dark)
+│   │   └── mobile.png     # Mobile web visual
+│   ├── drive/
+│   │   ├── logo.svg       # Proton Drive logomark
+│   │   ├── logo-full.svg  # Proton Drive logo + wordmark (white)
+│   │   ├── hero.png       # Hero module image
+│   │   ├── section-1.png  # Feature section image 1
+│   │   ├── section-2.png  # Feature section image 2
+│   │   ├── desktop.png    # Desktop app screenshot (dark)
+│   │   └── mobile.png     # Mobile web visual
+│   ├── vpn/
+│   │   ├── logo.svg       # Proton VPN logomark
+│   │   ├── logo-full.svg  # Proton VPN logo + wordmark (white)
+│   │   ├── hero.png       # Hero module image
+│   │   ├── section-1.png  # Feature section image 1
+│   │   ├── section-2.png  # Feature section image 2
+│   │   ├── desktop.png    # Desktop app screenshot
+│   │   └── mobile.png     # Mobile web visual
+│   ├── pass/
+│   │   ├── logo-full.svg  # Proton Pass logo + wordmark (white)
+│   │   ├── hero.png       # Homescreen cover image
+│   │   ├── desktop.jpg    # Lifestyle laptop photo
+│   │   └── mobile.jpg     # Lifestyle mobile photo
+│   ├── calendar/
+│   │   ├── hero.png       # Hero module image
+│   │   ├── section-1.png  # Feature section image 1
+│   │   ├── section-2.png  # Feature section image 2
+│   │   ├── desktop.png    # Desktop app screenshot (dark)
+│   │   ├── mobile.png     # Mobile web visual
+│   │   └── overview.png   # Calendar views overview
+│   └── proton/
+│       ├── logomark.svg       # Proton "P" logomark (white)
+│       └── logomark-purple.svg # Proton "P" logomark (purple)
+├── favicon.svg            # Site favicon (Proton P on purple)
+├── apple-touch-icon.svg   # Apple touch icon
+├── icon-192.svg           # PWA icon 192px
+├── icon-512.svg           # PWA icon 512px
+├── og-default.svg         # Default OpenGraph image
+└── safari-pinned-tab.svg  # Safari pinned tab icon
 ```
 
-## Proton Marketing Assets
+## Source Assets
 
-Download official Proton marketing assets from your Partner dashboard:
+All Proton marketing materials are stored in `assets/proton/` (excluded from Jekyll build). Product images above are copied from the following source directories:
 
-### Banner Assets
-- **Proton Mail - Encrypted Email**: https://drive.proton.me/urls/YTXYFR1MZG#9cBUwlNbNnf3
-- **Proton Mail - Secure and Private**: https://drive.proton.me/urls/KP9D5YQ08W#BhfsjShVIBFA
-- **Proton VPN - High Speed VPN**: https://drive.proton.me/urls/PJRQGFYFBC#4uVtBBVm2gLx
-- **Proton VPN - Secure VPN**: https://drive.proton.me/urls/HFYYVKK014#1ejbemNUKNBx
+### Logos
+- **Proton P logomark**: `assets/proton/Proton/Logomark/SVG/`
+- **Proton Mail logo**: `assets/proton/Proton Mail/Logo/Logomark only/SVG/`
+- **Proton VPN logo**: `assets/proton/Proton VPN/Logo/Logomark only/SVG/`
+- **Proton Drive logo**: `assets/proton/Materials for Proton Partners/Creative assets/Proton Drive/Proton Drive - Logo/Logomark only/SVG/`
+- **Proton Pass logo**: `assets/proton/Materials for Proton Partners/Creative assets/Proton Pass/Proton Pass - Logo/`
 
-### Product Visuals
-- **Proton Mail Desktop & Mobile**: https://drive.proton.me/urls/9HX28CCFDW#0nKDZr5Sjsy8
-- **Proton VPN Desktop & Mobile**: https://drive.proton.me/urls/K5K3HBGTYW#nSR8YvNAq6UN
+### Hero & Section Module Images
+- `assets/proton/Product web visuals/Module/{Mail,Drive,VPN,Calendar}/`
 
-### All Marketing Assets
-- **Complete Package**: https://drive.proton.me/urls/986VS45EQG#iSxjHsR2n6iR
+### Mobile Component Screenshots
+- `assets/proton/Product web visuals/Components/{Mail,Drive,VPN,Calendar}/`
+
+### Desktop App Screenshots
+- `assets/proton/Product app visuals/{Mail,Drive,VPN,Calendar}/Desktop/1x/`
+
+### Lifestyle Photos (Pass)
+- `assets/proton/Materials for Proton Partners/Creative assets/Proton Pass/Proton Pass - Lifestyle/`
+
+### Banner Ads
+- **Encrypted Email**: `assets/proton/Encrypted Email/{Dark,Light}/`
+- **Secure and Private**: `assets/proton/Secure and Private/{Dark,Light}/`
+- **High Speed VPN**: `assets/proton/High Speed VPN/{Dark,Light}/`
+- **Secure VPN**: `assets/proton/Secure VPN/{Dark,Light}/`
+
+### Content Ideas
+- `assets/proton/Materials for Proton Partners/Content ideas/`
 
 ### Partner Guide
-- https://drive.proton.me/urls/2TPW7TQZB8#3kyp1HvEvDuD
-
-## Recommended Image Sizes
-
-| Location | Dimensions | Format |
-|----------|------------|--------|
-| Blog featured image | 1200 x 630 | JPG/WebP |
-| Product hero | 800 x 600 | PNG/WebP |
-| OpenGraph default | 1200 x 630 | JPG |
-| Favicon | 32 x 32 | SVG/PNG |
-| Logo | 200 x 50 | PNG/SVG |
+- `assets/proton/Affiliate Welcome Guide.pdf`
 
 ## Usage in Templates
 
 Reference images in your templates:
 
 ```liquid
-{{ '/assets/images/blog/my-image.jpg' | relative_url }}
+{{ '/assets/images/products/mail/hero.png' | relative_url }}
 ```
 
 Or in markdown:
 
 ```markdown
-![Alt text](/assets/images/blog/my-image.jpg)
+![Alt text](/assets/images/products/mail/hero.png)
 ```

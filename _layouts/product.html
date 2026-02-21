@@ -18,30 +18,39 @@ layout: default
       <div class="hero-orb orb-2"></div>
     </div>
     <div class="container">
-      <div class="product-header">
-        <div class="product-icon-large">
-          {% case product_key %}
-            {% when 'mail' %}{% include icons/mail.svg %}
-            {% when 'drive' %}{% include icons/drive.svg %}
-            {% when 'vpn' %}{% include icons/vpn.svg %}
-            {% when 'calendar' %}{% include icons/calendar.svg %}
-            {% when 'pass' %}{% include icons/pass.svg %}
-            {% else %}{% include icons/proton.svg %}
-          {% endcase %}
-        </div>
-        <div>
+      <div class="product-hero-grid">
+        <div class="product-hero-content">
+          {% if page.logo %}
+          <img src="{{ page.logo | relative_url }}" alt="{{ product.name }} logo" class="product-logo-img">
+          {% else %}
+          <div class="product-icon-large">
+            {% case product_key %}
+              {% when 'mail' %}{% include icons/mail.svg %}
+              {% when 'drive' %}{% include icons/drive.svg %}
+              {% when 'vpn' %}{% include icons/vpn.svg %}
+              {% when 'calendar' %}{% include icons/calendar.svg %}
+              {% when 'pass' %}{% include icons/pass.svg %}
+              {% else %}{% include icons/proton.svg %}
+            {% endcase %}
+          </div>
+          {% endif %}
           <h1 class="hero-title">{{ page.title }}</h1>
-          <p class="hero-description">{{ product.tagline }}</p>
+          <p class="hero-description">{{ page.description }}</p>
+          <div class="hero-actions">
+            <a href="{{ affiliate_url }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+              Try {{ product.name }} Free
+              {% include icons/arrow-right.svg %}
+            </a>
+            <a href="#comparison" class="btn btn-secondary btn-lg">
+              See Comparison
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="hero-actions">
-        <a href="{{ affiliate_url }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-          Try {{ product.name }} Free
-          {% include icons/arrow-right.svg %}
-        </a>
-        <a href="#comparison" class="btn btn-secondary btn-lg">
-          See Comparison
-        </a>
+        {% if page.hero_image %}
+        <div class="product-hero-image">
+          <img src="{{ page.hero_image | relative_url }}" alt="{{ product.name }}" loading="eager">
+        </div>
+        {% endif %}
       </div>
     </div>
   </section>
@@ -81,6 +90,51 @@ layout: default
       </div>
     </div>
   </section>
+
+  <!-- Available on All Devices Section -->
+  {% if page.desktop_image or page.mobile_image %}
+  <section class="section section-dark">
+    <div class="container">
+      <header class="section-header">
+        <h2 class="section-title">Available on All Your Devices</h2>
+        <p class="section-subtitle">{{ product.name }} works seamlessly across desktop, mobile, and web.</p>
+      </header>
+      <div class="product-platforms">
+        {% if page.desktop_image %}
+        <div class="platform-desktop">
+          <img src="{{ page.desktop_image | relative_url }}" alt="{{ product.name }} desktop app" loading="lazy">
+          <span class="platform-label">Desktop</span>
+        </div>
+        {% endif %}
+        {% if page.mobile_image %}
+        <div class="platform-mobile">
+          <img src="{{ page.mobile_image | relative_url }}" alt="{{ product.name }} mobile app" loading="lazy">
+          <span class="platform-label">Mobile</span>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Feature Sections from Module Images -->
+  {% if page.section_images %}
+  <section class="section">
+    <div class="container">
+      {% for section_img in page.section_images %}
+      <div class="product-feature-section {% if forloop.index == 2 %}reverse{% endif %}">
+        <div class="product-feature-image">
+          <img src="{{ section_img.image | relative_url }}" alt="{{ section_img.alt }}" loading="lazy">
+        </div>
+        <div class="product-feature-text">
+          <h3>{{ section_img.title }}</h3>
+          <p>{{ section_img.text }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 
   <!-- CTA Banner -->
   {% include cta-banner.html

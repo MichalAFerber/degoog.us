@@ -71,7 +71,7 @@ exclude:
   - LICENSE
   - .gitignore
   - .sass-cache
-  - Materials_for_Proton_Partners
+  - assets/proton
 
 # SEO Settings
 twitter:
